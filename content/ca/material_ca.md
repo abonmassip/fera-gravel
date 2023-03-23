@@ -1,4 +1,4 @@
-# LA BICICLETA
+# LA BICICLETAS
 
 La Fera està pensada per ser pedalada amb bicicleta gravel.
 
