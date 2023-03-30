@@ -1,5 +1,7 @@
 import { LanguageProvider } from '@/src/lib/LanguageProvider'
 import Layout from '@/src/components/layout'
+
+import '@/src/styles/reset.css'
 import '@/src/styles/globals.css'
 
 export default function App({ Component, pageProps }) {

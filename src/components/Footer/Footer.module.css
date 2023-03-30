@@ -1,7 +1,7 @@
 .main {
   position: fixed;
-  width: 100%;
   bottom: 0px;
+  right: 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,19 +11,22 @@
 }
 
 .menu {
-  background: rgba(255, 255, 255, 0.2);
-  max-width: 1200px;
   list-style-type: none;
+  padding: 0;
   display: flex;
   justify-content: space-around;
-  font-size: 2em;
+  font-size: 30px;
 }
 
 .menu li {
   margin: 10px;
+  padding: 0 8px;
   cursor: pointer;
 }
 
 .menu li:hover {
-  text-shadow: 2px 2px 0px #ffffff;
+  background-color: var(--color-text);
+  color: var(--color-background);
+  transform: scale(1.08) rotate(-2deg);
+  transition: transform 0.2s ease-in-out;
 }
