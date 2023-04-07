@@ -1,5 +1,7 @@
 # TERRITORI
 
+---
+
 La Fera Pyrenees Mountain Gravel neix al cor dels Pirineus Centrals. Pedala entre les valls dels rius Noguera Pallaresa, Noguera Ribagorçana, Garona i Segre.
 
 Una ruta d'alta muntanya entre el vessant nord i sud de la serralada.

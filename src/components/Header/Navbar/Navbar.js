@@ -1,63 +1,53 @@
-import Link from 'next/link'
-import * as NavigationMenu from '@radix-ui/react-navigation-menu'
-import useTranslation from '@/src/lib/useTranslation'
-import { useContext } from 'react'
-import { LanguageContext } from '@/src/lib/LanguageProvider'
+import {
+  NavbarMenu,
+  NavbarButton,
+  NavbarDropdown,
+  NavbarDropdownButton
+} from './NavbarPieces'
 
-import styles from './Navbar.module.css'
-import { robotoBold } from '@/src/lib/fonts'
-
-export function NavbarMenu({ children }) {
+export default function Navbar() {
   return (
-    <NavigationMenu.Root className={styles.NavigationMenuRoot}>
-      <NavigationMenu.List className={styles.NavigationMenuList}>
-        {children}
-      </NavigationMenu.List>
-    </NavigationMenu.Root>
-  )
-}
+    <NavbarMenu>
 
-export function NavbarButton({ page, route, setRoute }) {
-  const { t } = useTranslation()
-  const [locale, setLocale] = useContext(LanguageContext)
-  return (
-    <NavigationMenu.Item className={styles.NavigationMenuItem}>
-      <NavigationMenu.Link className={styles.NavigationMenuLink} asChild active={route === page}>
-          <Link href={`/${locale}/${page}`} className={robotoBold.className} onClick={() => setRoute(page)}>
-            {t(page).toUpperCase()}
-          </Link>
-      </NavigationMenu.Link>
-    </NavigationMenu.Item>
-  )
-}
+      <NavbarDropdown title="projecte">
+        <NavbarDropdownButton page="projecte" />
+        <NavbarDropdownButton page="sostenibilitat" />
+        <NavbarDropdownButton page="acces" />
+      </NavbarDropdown>
 
-export function NavbarDropdown({ titol, children }) {
-  const { t } = useTranslation()
+      <NavbarButton page="projecte" onlyMobile />
+      <NavbarButton page="sostenibilitat" onlyMobile />
+      <NavbarButton page="acces" onlyMobile />
 
-  return (
-    <NavigationMenu.Item className={styles.NavigationMenuItem}>
-      <NavigationMenu.Trigger className={`${styles.NavigationMenuTrigger} ${robotoBold.className}`}>
-        {t(titol).toUpperCase()}
-      </NavigationMenu.Trigger>
-      <NavigationMenu.Content className={styles.NavigationMenuContent}>
-        <ul className={styles.menu_list}>
-          {children}
-        </ul>
-      </NavigationMenu.Content>
-    </NavigationMenu.Item>
-  )
-}
+      <NavbarDropdown title="ruta">
+        <NavbarDropdownButton page="ruta" />
+        <NavbarDropdownButton page="territori" />
+        <NavbarDropdownButton page="fera500" />
+        <NavbarDropdownButton page="fera300" />
+        <NavbarDropdownButton page="fera200" />
+        <NavbarDropdownButton page="fera150" />
+      </NavbarDropdown>
 
-export function NavbarDropdownButton({ page, route, setRoute }) {
-  const { t } = useTranslation()
-  const [locale, setLocale] = useContext(LanguageContext)
-  return (
-    <li className={styles.menu_button}>
-      <NavigationMenu.Link className={styles.NavigationMenuLink} asChild active={route === page}>
-          <Link href={`/${locale}/${page}`} className={robotoBold.className} onClick={() => setRoute(page)}>
-            {t(page).toUpperCase()}
-          </Link>
-      </NavigationMenu.Link>
-    </li>
+      <NavbarButton page="ruta" onlyMobile />
+      <NavbarButton page="territori" onlyMobile />
+      <NavbarButton page="fera500" onlyMobile />
+      <NavbarButton page="fera300" onlyMobile />
+      <NavbarButton page="fera200" onlyMobile />
+      <NavbarButton page="fera150" onlyMobile />
+
+      <NavbarButton page="material" />
+
+      <NavbarDropdown title="passaporticaus">
+        <NavbarDropdownButton page="passaport" />
+        <NavbarDropdownButton page="caus" />
+      </NavbarDropdown>
+
+      <NavbarButton page="passaport" onlyMobile />
+      <NavbarButton page="caus" onlyMobile />
+
+      <NavbarButton page="marxandatge" />
+      <NavbarButton page="agencia" />
+
+    </NavbarMenu>
   )
 }

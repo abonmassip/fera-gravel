@@ -1,10 +1,28 @@
-import useTranslation from '@/src/lib/useTranslation'
+import { getContent } from '@lib/files'
 
-export default function Agencia () {
-  const { t } = useTranslation()
+import styles from '@styles/infoPage.module.scss'
+
+export default function Agencia ({ htmlContent }) {
+
   return(
-    <div style={{height: '70vh', textAlign: 'center'}}>
-      <h1>{t('agencia')}</h1>
+    <div className={styles.main}>
+      <div className={styles.text} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
     </div>
   )
+}
+
+export async function getStaticProps({ params }) {
+  const htmlContent = await getContent(params.lang, 'agencia');
+  return { props: {htmlContent} }
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { lang: 'ca' } },
+      { params: { lang: 'es' } },
+      { params: { lang: 'en' } }
+    ],
+    fallback: false
+  }
 }

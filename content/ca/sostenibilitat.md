@@ -1,5 +1,7 @@
 # SOSTENIBILITAT
 
+---
+
 Pedalar sense deixar empremta.
 
 Un dels objectius del projecte és conservar el territori on es desenvolupa, on vivim. És per això que la Fera Pyrenees Mountain Gravel es construeix sobre diversos eixos: bicicleta, transport públic, economia local, reducció d'impactes i compensació del CO₂ generat.

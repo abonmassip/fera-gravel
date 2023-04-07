@@ -1,12 +1,12 @@
-import { getContent } from '@/src/lib/files'
+import { getContent } from '@lib/files'
 
-import styles from './projecte.module.css'
+import styles from '@styles/infoPage.module.scss'
 
 export default function Material ({ htmlContent }) {
 
   return(
     <div className={styles.main}>
-      <div dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
+      <div className={styles.text} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
     </div>
   )
 }

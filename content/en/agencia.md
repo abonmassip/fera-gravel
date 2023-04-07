@@ -1,7 +1,13 @@
 # AGENCY
 
-Fera Pyrenees Mountain Gravel, with its various options and variants, is a demanding traverse.
+---
 
-For this reason, we propose to make the route easier for you with the help of Outdooarventour.
+Fera Pyrenees Mountain Gravel, with its various options and variants, is a demanding route.
 
-You can access services, products and accommodation reservations through its website.
+For this reason we propose to facilitate the route with Outdoor Adventure. The agency that has accompanied us on this adventure from the beginning.
+
+We propose various products that incorporate accommodation, merchandising and services.
+
+You can access the products and reserve through their website.
+
+<https://www.outdooradventour.com/tours/fera-pyrenees-mountain-gravel>

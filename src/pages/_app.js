@@ -1,8 +1,8 @@
-import { LanguageProvider } from '@/src/lib/LanguageProvider'
-import Layout from '@/src/components/layout'
+import { LanguageProvider } from '@lib/LanguageProvider'
+import Layout from '@components/layout'
 
-import '@/src/styles/reset.css'
-import '@/src/styles/globals.css'
+import '@styles/reset.css'
+import '@styles/globals.scss'
 
 export default function App({ Component, pageProps }) {
   return (

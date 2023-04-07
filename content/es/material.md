@@ -1,16 +1,18 @@
 # BICICLETA
 
-Fera Pyrenees Mountain Gravel está pensada para ser realizada en bicicleta gravel.
+---
+
+Fera Pyrenees Mountain Gravel está pensada para ser realizada en bicicleta gravel.
 
 Bicicleta gravel para escapar de la especialización, cómo bicicleta de viaje y aventura, que permite avanzar en todo tipo de terrenos.
 
 De todos modos y cómo es evidente, se puede pedalear con cualquier clase de bicicleta que se crea conveniente.
 
-Para crear la ruta hemos utilizado una bicicleta gravel de acero con cubiertas mixtas, y una relación plato 50/34 y cassette de 11/36. Siempre transportando poco peso.
+Para crear la ruta hemos utilizado una bicicleta gravel de acero con cubiertas mixtas, y una relación plato 50/34 y cassette de 11/36. Siempre transportando poco peso.
 
 A partir de esta experiencia, aconsejamos:
 
-- Una relación de plato y cassette más próxima a la bicicleta de montaña. Puede facilitar el golpe de pedal en las largas ascensiones, sobre todo si se hace la ruta con peso.
+- Una relación de plato y cassette más próxima a la bicicleta de montaña. Puede facilitar el golpe de pedal en las largas ascensiones, sobre todo si se hace la ruta con peso.
 
 - Materiales más rígidos de cuadro y horquilla puede provocar una mayor exigencia en las largas bajadas de tierra.
 
@@ -20,9 +22,11 @@ Aconsejamos una revisión exhaustiva de la bicicleta antes de iniciar la ruta. L
 
 # MATERIAL DE SEGURIDAD
 
-- Luces y elementos reflectantes: Fera transcurre por carreteras y pistas que usan otros vehículos, hay que tomar todas las medidas de seguridad necesarias para hacernos visibles.
+---
 
-**Es imprescindible utilizar luz (delantera y posterior) y chaleco reflectante para cruzar el Túnel de Vielha.**
+- Luces y elementos reflectantes: Fera transcurre por carreteras y pistas que usan otros vehículos, hay que tomar todas las medidas de seguridad necesarias para hacernos visibles.
+
+**Es imprescindible utilizar luz (delantera y posterior) y chaleco reflectante para cruzar el Túnel de Vielha.**
 
 - Ropa de abrigo: Fera circula por zonas de alta montaña donde la meteorología es cambiante y puede ser muy adversa en cualquier época del año. Recomendamos impermeable y ropa de abrigar.
 
@@ -30,8 +34,6 @@ Aconsejamos una revisión exhaustiva de la bicicleta antes de iniciar la ruta. L
 
 # TRANSPORTE DE MATERIAL
 
-Fera Pyrenees Mountain Gravel es exigente.
+---
 
-Recomendamos reducir al mínimo el equipaje durante la travesía.
-
-Debido a esto proponemos un servicio de transporte de materiales entre alojamientos.
+Fera Pyrenees Mountain Gravel es exigente. Recomendamos reducir al mínimo el equipaje durante la travesía. Debido a esto proponemos un servicio de transporte de materiales entre alojamientos.

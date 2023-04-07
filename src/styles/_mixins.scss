@@ -1,0 +1,10 @@
+$laptop: 875px;
+$desktop: 1064px;
+
+@mixin laptop {
+  @media (min-width: $laptop) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) { @content; }
+}

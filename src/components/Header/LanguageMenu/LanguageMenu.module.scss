@@ -1,0 +1,28 @@
+@import '../../../styles/mixins';
+
+.languages {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  z-index: 3;
+  font-size: var(--font-size-m);
+  padding: 4px;
+
+  a {
+    margin: 0 4px;
+    cursor: pointer;
+  }
+}
+
+.show {
+  display: flex;
+}
+
+@include laptop {
+  .languages {
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--font-size-ss);
+  }
+}

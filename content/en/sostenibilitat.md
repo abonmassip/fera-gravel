@@ -1,10 +1,12 @@
 # SUSTAINABILITY
 
+---
+
 Pedal without leaving a trace.
 
-One of the objectives of the project is to conserve the territory where it is developed, where we live. That is why the FERA Pyrenees Mountain Gravel is built on several axes: cycling, public transport, local economy, impact reduction and compensation of the CO₂ generated.
+One of the objectives of the project is to conserve the territory where it is developed, where we live. That is why the FERA Pyreness Mountain Gravel is built on several axes: cycling, public transport, local economy, impact reduction and compensation of the CO₂ generated.
 
-Cycling as a means of transport that allows you to enjoy the environment away from rushes, noise and smoke. Promotion of cycle tourism as a tourism model, deseasonalized, low impact and far from overcrowding.
+Cycling as a means of transport that allows you to enjoy the environment away from rushes, noise and smoke. Promotion of cycle tourism as a tourism model, deseasonalized, low impact and far from massification.
 
 Encouraging public transport as a priority to get to the start of the route. The train as a vehicle to reach the Pyrenees.
 

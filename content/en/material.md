@@ -1,5 +1,7 @@
 # THE BIKE
 
+---
+
 Fera is designed to be pedaled with a gravel bike.
 
 A gravel bike to escape specialization, as a travel and adventure bike, which allows you to progress on all types of terrain.
@@ -20,6 +22,8 @@ We advise a thorough check of the bike before starting the route. The requiremen
 
 # SAFETY GEAR
 
+---
+
 - Lights and reflective elements: FERA takes place on roads and tracks used by other vehicles, it is necessary to take all the necessary safety measures to make us visible.
 
 **It is mandatory to use a light (front and rear) and a reflective vest to cross the Vielha Tunnel.**
@@ -29,5 +33,7 @@ We advise a thorough check of the bike before starting the route. The requiremen
 - Repair gear: Many sections of the route are far from service centers and workshops. We recommend bringing the basic repair material.
 
 # TRANSPORTATION OF MATERIAL
+
+---
 
 FERA is demanding. We recommend keeping your luggage to a minimum during the crossing. Due to this we propose a service for transporting gear between accommodations (see Agency)

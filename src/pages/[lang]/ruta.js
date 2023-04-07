@@ -1,16 +1,15 @@
-import { getContent } from '@/src/lib/files'
-import Footer from '@/src/components/Footer/Footer'
+import { getContent } from '@lib/files'
 
-import styles from './projecte.module.css'
+import styles from '@styles/infoPage.module.scss'
+import { montserratM } from '@lib/fonts'
 
 export default function Ruta ({ htmlContent }) {
 
   return(
     <>
-      <div className={styles.main}>
-        <div dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
+      <div className={`${styles.main} ${montserratM.className}`}>
+        <div className={styles.text} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
       </div>
-      <Footer />
     </>
   )
 }

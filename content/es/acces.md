@@ -1,5 +1,7 @@
 # ACCESO
 
+---
+
 Fera Pyrenees Mountain Gravel está diseñada para poder acceder a ella en transporte público.
 
 Ya sea Fera cómo alguna de sus diversas opciones, todas tienen acceso en tren desde la estación de Ferrocarriles de Cataluña de La Pobla de Segur y su conexión con Lleida.
