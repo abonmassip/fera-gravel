@@ -24,6 +24,7 @@ export default function Fera500 ({ htmlContent }) {
             src={map500}
             alt=""
             style={{objectFit: "contain"}}
+            fill
           />
         </div>
         <div className={styles.text} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>

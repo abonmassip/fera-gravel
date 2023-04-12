@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { MobileMenuContext } from '../Header'
+import { MobileMenuContext } from '@lib/context'
 import { cx } from '@lib/utils'
 
 import styles from './BurgerButton.module.scss'

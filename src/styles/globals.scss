@@ -1,9 +1,11 @@
+@import '../styles/mixins';
+
 :root {
   --color-blue: #3e5680;
   --color-aqua: #408eb5;
   --color-red: #c37171;
   --color-rose: #f6cdd5;
-  --color-rose-light: #fff6f8;
+  --color-rose-light: #f0f6f4;
   --color-background: #ffffff;
   --color-text: #222222;
 
@@ -14,7 +16,11 @@
   --font-size-ll: 1.8rem;
   --font-size-lll: 2.5rem;
 
-  --header-height: 80px;
+  --header-height: 50px;
+
+  @include laptop {
+    --header-height: 80px;
+  }
 
   --animation-time: 0.2s;
 }

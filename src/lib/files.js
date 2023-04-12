@@ -4,10 +4,6 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 
-export function getFilesData() {
-  return path.resolve(process.cwd(), 'content')
-}
-
 const contentDirectory = path.resolve(process.cwd(), 'content')
 
 export async function getContent(lang, page) {
@@ -28,4 +24,28 @@ export async function getContent(lang, page) {
   const processedContent = await remark().use(html).process(frontMatter.content)
   const contentHtml = processedContent.toString()
   return contentHtml
+}
+
+
+async function getCauData(fileName, filesPath) {
+  const id = fileName.replace(/\.md$/, "")
+  const fullPath = path.join(filesPath, fileName)
+  const fileContents = fs.readFileSync(fullPath, 'utf-8')
+  const frontMatter = matter(fileContents)
+  const processedContent = await remark().use(html).process(frontMatter.content)
+  return {
+    id,
+    ...frontMatter.data,
+    content: processedContent.toString()
+  }
+}
+
+export async function getCaus(lang) {
+  const filesPath = path.join(contentDirectory, lang, 'caus')
+
+  const fileNames = fs.readdirSync(filesPath)
+
+  const causData = await Promise.all(fileNames.map(async (fileName) => getCauData(fileName, filesPath)))
+
+  return causData
 }

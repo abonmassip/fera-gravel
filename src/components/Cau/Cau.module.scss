@@ -1,0 +1,84 @@
+@import '../../styles/mixins';
+
+.cau {
+  background-color: var(--color-rose-light);
+  padding: 10px;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cauImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  transition: aspect-ratio 0.2s;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.title {
+  h1 {
+    font-size: var(--font-size-m);
+  }
+
+  a:hover {
+    color: var(--color-red);
+  }
+}
+
+.location {
+  font-size: 0.9rem;
+
+  img {
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  a:hover {
+    color: var(--color-red);
+  }
+}
+
+.cauMarkdown {
+  height: 0px;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+
+  p {
+    font-size: var(--font-size-ss);
+  }
+}
+
+.moreInfo {
+  align-self: flex-end;
+  font-size: 0.8rem;
+  background: none;
+  border: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.show {
+  .cauMarkdown {
+    height: 100px;
+    flex-grow: 1;
+    opacity: 1;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include laptop {
+  .show .cauImage {
+    aspect-ratio: 3 / 1;
+  }
+}

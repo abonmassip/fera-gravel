@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 450px), 1fr));
   gap: 1rem;
+  height: 100%;
 
   padding: 1rem;
 
@@ -11,12 +12,35 @@
 }
 
 .map {
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
   img {
     height: 100%;
   }
 }
 
 .text {
+
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 16px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-blue);
+    border-radius: 10px;
+  }
 
   h1 {
     font-size: var(--font-size-ll);
@@ -87,11 +111,11 @@
 @include desktop {
   .text {
     h1 {
-      font-size: var(--font-size-lll);
+      font-size: var(--font-size-ll);
     }
 
     p {
-      font-size: var(--font-size-s);
+      font-size: var(--font-size-ss);
     }
   }
 }

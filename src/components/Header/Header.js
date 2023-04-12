@@ -10,14 +10,10 @@ import BurgerButton from './BurgerButton/BurgerButton'
 
 import styles from './Header.module.scss'
 
-export const MobileMenuContext = createContext([])
-
 export default function Header() {
-  const [showMenu, setShowMenu] = useState(false)
   const router = useRouter()
 
   return (
-    <MobileMenuContext.Provider value={[ showMenu, setShowMenu ]}>
       <div className={styles.header}>
         <BurgerButton />
         <LanguageMenu />
@@ -38,6 +34,5 @@ export default function Header() {
           <Navbar />
         </div>
       </div>
-    </MobileMenuContext.Provider>
   )
 }

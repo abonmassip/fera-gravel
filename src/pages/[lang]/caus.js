@@ -1,19 +1,27 @@
-import { getContent } from '@lib/files'
+import { getContent, getCaus } from '@lib/files'
+import { cx } from '@lib/utils'
+import MarkdownText from '@components/MarkdownText/MarkdownText'
+import Cau from '@components/Cau/Cau'
+import styles from '@styles/caus.module.scss'
+import { montserratM } from '@lib/fonts'
 
-import styles from '@styles/infoPage.module.scss'
-
-export default function Caus ({ htmlContent }) {
+export default function Caus ({ htmlContent, causData }) {
 
   return(
-    <div className={styles.main}>
-      <div className={styles.text} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
+    <div className={cx(styles.main, montserratM.className)}>
+
+      <MarkdownText htmlContent={htmlContent} />
+      <div className={styles.gridWrapper}>
+        {causData.map((cau) => <Cau {...cau} key={cau.id}/>)}
+      </div>
     </div>
   )
 }
 
 export async function getStaticProps({ params }) {
-  const htmlContent = await getContent(params.lang, 'caus');
-  return { props: {htmlContent} }
+  const htmlContent = await getContent(params.lang, 'caus')
+  const causData = await getCaus(params.lang)
+  return { props: {htmlContent, causData} }
 }
 
 export async function getStaticPaths() {

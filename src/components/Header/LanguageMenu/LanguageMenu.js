@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { cx } from '@lib/utils'
 import { LanguageContext } from '@lib/LanguageProvider'
-import { MobileMenuContext } from '../Header'
+import { MobileMenuContext } from '@lib/context'
 
 import styles from './LanguageMenu.module.scss'
 
@@ -13,7 +13,6 @@ export default function LanguageMenu() {
   const router = useRouter()
 
   const getLink = (language) => router.pathname.replace(/\[lang]/,language)
-  console.log(getLink('ca'));
 
   return (
     <div className={cx(styles.languages, showMenu ? styles.show : '')}>

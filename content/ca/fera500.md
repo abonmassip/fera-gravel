@@ -25,10 +25,3 @@ Podeu trobar més informació a l’apartat Ruta i descarregar tota la informaci
 [track alternativa (gpx)](http://www.duckduckgo.com)
 
 [llibre de ruta (pdf)](http://www.duckduckgo.com)
-
----
-
-## FOTOS
-
-foto1
-foto2

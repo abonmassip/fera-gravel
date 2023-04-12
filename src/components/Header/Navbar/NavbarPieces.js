@@ -5,7 +5,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import useTranslation from '@lib/useTranslation'
 import { cx } from '@lib/utils'
 import { LanguageContext } from '@lib/LanguageProvider'
-import { MobileMenuContext } from '../Header'
+import { MobileMenuContext } from '@lib/context'
 
 import styles from './Navbar.module.scss'
 import { montserratXB } from '@lib/fonts'
