@@ -1,6 +1,7 @@
 @import '../../styles/mixins';
 
 .markdown {
+
   h1 {
     font-size: var(--font-size-l);
     letter-spacing: 0.4rem;
@@ -16,7 +17,7 @@
 
   p {
     font-size: var(--font-size-ss);
-    line-height: 1.2;
+    line-height: 1.5;
     text-align: justify;
     margin: 10px 0;
   }
@@ -36,6 +37,16 @@
     text-decoration: underline;
     font-weight: bold;
   }
+
+  blockquote {
+    padding-left: 3rem;
+    margin: 2rem 0;
+    font-style: italic;
+
+    p {
+      font-size: 0.6rem;
+    }
+  }
 }
 
 @include desktop {
@@ -46,6 +57,10 @@
 
     p {
       font-size: var(--font-size-s);
+    }
+
+    blockquote > p {
+      font-size: 0.8rem;
     }
   }
 }

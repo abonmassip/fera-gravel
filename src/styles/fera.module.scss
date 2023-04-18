@@ -5,27 +5,23 @@
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 450px), 1fr));
   gap: 1rem;
   height: 100%;
-
-  padding: 1rem;
-
+  padding: 0 1rem;
   line-height: 1.5;
 }
 
 .map {
-  height: 100%;
-  min-height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
 
   img {
-    height: 100%;
+    object-position: top;
   }
 }
 
-.text {
 
+.text {
   height: 100%;
   overflow-y: auto;
   padding-right: 16px;
@@ -40,43 +36,6 @@
   &::-webkit-scrollbar-thumb {
     background: var(--color-blue);
     border-radius: 10px;
-  }
-
-  h1 {
-    font-size: var(--font-size-ll);
-    letter-spacing: 0.4rem;
-    margin: 0 30px;
-  }
-
-  hr {
-    margin: 0 30px 15px 30px;
-    height: 3px;
-    border: none;
-    background-color: var(--color-blue);
-  }
-
-  p {
-    font-size: var(--font-size-ss);
-    line-height: 1.2;
-    text-align: justify;
-
-    margin: 10px 0;
-  }
-
-  ul {
-    list-style-type: disc;
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-  }
-
-  li {
-    margin-bottom: 0.5rem;
-    margin-left: 2rem;
-  }
-
-  a {
-    text-decoration: underline;
-    font-weight: bold;
   }
 }
 
@@ -105,17 +64,5 @@
 
   img {
     object-fit: cover;
-  }
-}
-
-@include desktop {
-  .text {
-    h1 {
-      font-size: var(--font-size-ll);
-    }
-
-    p {
-      font-size: var(--font-size-ss);
-    }
   }
 }

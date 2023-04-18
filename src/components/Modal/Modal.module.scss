@@ -1,0 +1,22 @@
+.modal {
+  position: fixed;
+  inset: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(17 24 39);
+  z-index: 50;
+
+  img {
+    object-position: center !important;
+  }
+}
+
+.closeButton {
+  z-index: 100;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}

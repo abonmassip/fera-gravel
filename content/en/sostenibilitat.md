@@ -16,6 +16,4 @@ Reduction of materials and impacts. We will prioritize digital formats. A route 
 
 Economic compensations for all those services that generate CO₂ emissions. Taxi and material transport services will have an extra cost of 0.023 euros/km\*.
 
-The income generated in this concept will be allocated to the Escola de Pastors de Catalunya, a training school for shepherds in extensive and mountain livestock farming. Extensive livestock farming stabilizes the population, creates a mosaic territory that improves biodiversity and helps reduce the possibility of large forest fires, as well as reducing the consumption of artificial fertilizers and helping to maintain carbon sinks.
-
 > \*Data obtained from the CO₂ eq emissions of a large petrol car (0.43 kg CO₂ eq/ km) (Database: Ecoinvent 3 // Calculation method: Recipe Midpoint Individualist 1.0.4) and the average price of CO₂ on the international market in 2021. (53.55 euros/TCO2) (www.sendeco2.com)

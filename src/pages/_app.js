@@ -1,5 +1,5 @@
 import { LanguageProvider } from '@lib/LanguageProvider'
-import { MobileMenuProvider } from '@lib/context'
+import { MobileMenuProvider, RutaProvider } from '@lib/context'
 import Layout from '@components/layout'
 
 import '@styles/reset.css'
@@ -9,9 +9,11 @@ export default function App({ Component, pageProps }) {
   return (
     <LanguageProvider>
       <MobileMenuProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <RutaProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </RutaProvider>
       </MobileMenuProvider>
     </LanguageProvider>
   )

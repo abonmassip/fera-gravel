@@ -3,9 +3,9 @@ import styles from '@styles/layout.module.scss'
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className={styles.container}>
       <Header />
-      <main className={styles.layout}>{children}</main>
-    </>
+      <main className={styles.main}>{children}</main>
+    </div>
   )
 }

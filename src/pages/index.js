@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Logo from '@components/Logo/Logo'
-import Footer from '@components/Footer/Footer'
-import backgroundImage from '@public/img/portada2.jpg'
-
+import { BackgroundImage } from '../components/ContentImages/ContentImages'
+import IMAGES from '../lib/images'
+import RoutesMenu from '@/src/components/RoutesMenu/RoutesMenu'
 import styles from '@styles/Home.module.scss'
 
 export default function Home() {
@@ -16,15 +15,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.background_image}>
-        <Image src={backgroundImage} alt="" fill style={{objectFit:"cover"}} />
-      </div>
+      <BackgroundImage src={IMAGES.images.portada} opacity={1} blur={1} scale={1.01} />
 
       <div className={styles.main}>
+
         <div className={styles.logo}>
-          <Logo />
+          <Image src={IMAGES.logos.logoSVG} alt="Logo" fill priority/>
         </div>
-        <Footer />
+
+        <div className={styles.rutes}>
+          <Image src={IMAGES.graphics.branca} width="60" alt="" style={{rotate: "40deg"}}/>
+          <RoutesMenu />
+          <Image src={IMAGES.graphics.branca} width="60" alt="" style={{rotate: "220deg"}}/>
+        </div>
+
       </div>
     </>
   )

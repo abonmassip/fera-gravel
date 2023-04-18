@@ -1,41 +1,26 @@
-import { getContent } from '@lib/files'
-import Image from 'next/image'
-import { cx } from '@lib/utils'
-
-import accesImage from '@public/img/sostenible-acces.jpg'
-import branca from '@public/img/branca.png'
-import styles from '@styles/infoPage.module.scss'
-import { montserratM } from '@lib/fonts'
+import { getFile } from '@lib/files'
+import IMAGES from '@lib/images'
+import { BackgroundImage, FullWidthImage } from '@/src/components/ContentImages/ContentImages'
+import MarkdownText from '@components/MarkdownText/MarkdownText'
 
 export default function Acces ({ htmlContent }) {
-
   return(
-    <div className={cx(styles.main, montserratM.className)}>
-      <div className={styles.text} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
-
-      <div className={styles.background_image}>
-        <Image src={branca} alt="" fill style={{objectPosition: "30vw"}} />
-      </div>
-
-      <div className={styles.horizontal_image}>
-        <Image src={accesImage} alt="" fill />
-      </div>
+    <div>
+      <BackgroundImage src={IMAGES.graphics.branca} />
+      <MarkdownText htmlContent={htmlContent}/>
+      <FullWidthImage src={IMAGES.images.finestra} height="300px"/>
     </div>
   )
 }
 
 export async function getStaticProps({ params }) {
-  const htmlContent = await getContent(params.lang, 'acces');
-  return { props: {htmlContent} }
+  const page = await getFile(params.lang, 'acces');
+  return { props: { htmlContent: page.content } }
 }
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      { params: { lang: 'ca' } },
-      { params: { lang: 'es' } },
-      { params: { lang: 'en' } }
-    ],
+    paths: [{ params: { lang: 'ca' } }, { params: { lang: 'es' } }, { params: { lang: 'en' } }],
     fallback: false
   }
 }

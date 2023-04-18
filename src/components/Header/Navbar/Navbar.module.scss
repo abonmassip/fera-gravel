@@ -62,10 +62,6 @@
   display: block;
 }
 
-.link, .item button {
-  background-color: white;
-}
-
 .link:hover,
 .link:focus-visible,
 .trigger:hover,
@@ -83,7 +79,11 @@
 
 .content {
   position: absolute;
+  border-radius: 4px;
   top: 50px;
+  padding: 0 10px;
+  transform: translate(-10px);
+  background-color: white;
 }
 
 .menu_list {

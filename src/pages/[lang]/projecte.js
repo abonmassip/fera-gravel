@@ -1,39 +1,26 @@
-import { getContent } from '@lib/files'
-import Image from 'next/image'
-import { cx } from '@lib/utils'
-
-import logoBlack from '@public/img/logo-negre.jpg'
-import branca from '@public/img/branca.png'
-import styles from '@styles/infoPage.module.scss'
-import { montserratM } from '@lib/fonts'
+import { getFile } from '@lib/files'
+import MarkdownText from '@components/MarkdownText/MarkdownText'
+import { BackgroundImage, CenteredImage } from '@/src/components/ContentImages/ContentImages'
+import IMAGES from '@lib/images'
 
 export default function Projecte ({ htmlContent }) {
-
   return(
-    <div className={cx(styles.main, montserratM.className)}>
-      <div className={styles.text} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
-
-      <Image src={logoBlack} alt="" width="200" className={styles.logo}/>
-
-      <div className={styles.background_image}>
-        <Image src={branca} alt="" fill style={{objectPosition: "-40vw"}}/>
-      </div>
-    </div>
+    <>
+      <BackgroundImage src={IMAGES.graphics.branca} />
+      <MarkdownText htmlContent={htmlContent} />
+      <CenteredImage src={IMAGES.logos.logoBlack} width="200px" height="200px" />
+    </>
   )
 }
 
 export async function getStaticProps({ params }) {
-  const htmlContent = await getContent(params.lang, 'projecte');
-  return { props: {htmlContent} }
+  const page = await getFile(params.lang, 'projecte')
+  return { props: { htmlContent: page.content } }
 }
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      { params: { lang: 'ca' } },
-      { params: { lang: 'es' } },
-      { params: { lang: 'en' } }
-    ],
+    paths: [{ params: { lang: 'ca' } }, { params: { lang: 'es' } }, { params: { lang: 'en' } }],
     fallback: false
   }
 }

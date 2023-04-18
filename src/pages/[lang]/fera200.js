@@ -1,4 +1,4 @@
-import { getContent } from '@lib/files'
+import { getFile } from '@lib/files'
 import Image from 'next/image'
 import { cx } from '@lib/utils'
 
@@ -21,8 +21,8 @@ export default function Fera200 ({ htmlContent }) {
 }
 
 export async function getStaticProps({ params }) {
-  const htmlContent = await getContent(params.lang, 'fera200');
-  return { props: {htmlContent} }
+  const page = await getFile(params.lang, 'fera200');
+  return { props: { htmlContent: page.content } }
 }
 
 export async function getStaticPaths() {

@@ -1,52 +1,32 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import Image from 'next/image'
-import { cx } from '@lib/utils'
-import locationIcon from '@public/img/location.png'
+import { cx, useOutsideAlerter } from '@lib/utils'
+import IMAGES from '@/src/lib/images'
 import styles from './Cau.module.scss'
+import { montserratM } from '@lib/fonts'
 
-function MakeLink({ url, children }) {
-  if (url) {
-    return <a href={url} target='_blank'>{ children }</a>
-  } else {
-    return children
-  }
-}
+const MakeLink = ({ url, children }) => url ? <a href={url} target='_blank'>{ children }</a> : children
 
 export default function Caus ({ nom, localitat, link, imatge, maps, content }) {
   const [show, setShow] = useState(false);
-
-  const useOutsideAlerter = (ref) => {
-    useEffect(() => {
-      function handleClickOutside(event) {
-        if (ref.current && !ref.current.contains(event.target)) {
-          setShow(false)
-        }
-      }
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, [ref]);
-  }
-
   const wrapperRef = useRef()
-  useOutsideAlerter(wrapperRef)
+  useOutsideAlerter(wrapperRef, () => setShow(false))
 
   return (
-    <div ref={wrapperRef} className={cx(styles.cau, show ? styles.show : '')}>
+    <div ref={wrapperRef} className={cx(styles.cau, montserratM.className, show ? styles.show : '')}>
 
       <div className={styles.title}>
         <MakeLink url={link}>
-        <img className={styles.cauImage} src={imatge} alt="" />
+          <img className={styles.cauImage} src={imatge} alt="" />
           <h1>{nom}</h1>
         </MakeLink>
       </div>
 
       <div className={styles.location}>
         <MakeLink url={maps}>
-          <Image src={locationIcon} alt="location" width={16} />{localitat}
+          <Image src={IMAGES.icons.location} alt="location" width={16} />
+          {localitat}
         </MakeLink>
-
       </div>
 
       <div className={styles.cauMarkdown} dangerouslySetInnerHTML={{ __html: content }} />

@@ -1,7 +1,3 @@
-# RUTA
-
----
-
 Una ruta, moltes opcions.
 
 La Fera Pyrenees Mountain Gravel gira al voltant d'una ruta circular de 510 km i 13.300 m de desnivell positiu.

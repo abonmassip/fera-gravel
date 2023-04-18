@@ -1,0 +1,76 @@
+@import '../../styles/mixins';
+
+.fullWidthImage {
+  position: relative;
+  width: 100%;
+  max-height: 25vh;
+  margin: 1rem 0;
+
+  @include laptop {
+    max-height: none;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.centeredImageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+
+  .centeredImage {
+    position: relative;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.backgroundImage {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: visible;
+
+  img {
+    object-fit: cover;
+    margin: 0;
+    overflow: visible;
+  }
+}
+
+.imageAndText {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include laptop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .imageLeft {
+    position: relative;
+    min-height: 100px;
+    width: 100%;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .text {
+    align-self: center;
+    padding: 1rem;
+    background-color: var(--color-rose);
+  }
+}

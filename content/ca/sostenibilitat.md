@@ -16,7 +16,4 @@ Reducció de materials i impactes. Prioritzarem els formats digitals. Una ruta q
 
 Compensacions econòmiques per a tots aquells serveis que generin emissions de CO₂. Els serveis de Taxi i de Transport de material tindran un cost extra de 0,023 euros/km\*.
 
-Els ingressos generats en aquest concepte es destinaran a l'Escola de Pastors de Catalunya espai de formació de pastors/es en ramaderia extensiva i de muntanya.
-La ramaderia extensiva fixa població, permet crear un territori mosaic que millora la biodiversitat i ajuda a reduir la possibilitat de grans incendis forestals, a més de reduir el consum d'adobs artificials i ajuda a mantenir els embornals de carboni.
-
 > \*Dada obtinguda a partir de les emissions de CO₂ eq d'un cotxe gran de benzina( 0,43 kg CO₂ eq/ km) (Base de dades: Ecoinvent 3 // Mètode de càlcul: Recipe Midpoint Individualist 1.0.4) i el preu mitjà del CO₂ al mercat internacional l'any 2021. (53,55 euros/TCO2 ) (www.sendeco2.com)

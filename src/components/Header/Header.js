@@ -1,9 +1,7 @@
-import { createContext, useState } from 'react'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 import logoCapFera from '@public/img/logo-cap-fera.svg'
-import * as AspectRatio from '@radix-ui/react-aspect-ratio'
 import Navbar from './Navbar/Navbar'
 import LanguageMenu from './LanguageMenu/LanguageMenu'
 import BurgerButton from './BurgerButton/BurgerButton'
@@ -20,15 +18,9 @@ export default function Header() {
         <div className={styles.nav_container}>
           {
             router.asPath.split('/').pop()
-              ? <div className={styles.nav_logo}>
-                  <AspectRatio.Root ratio={1/1}>
-                    <Link href="/" className={styles.nav_logo_link} >
-                      <div className={styles.nav_logo_image}>
-                        <Image src={logoCapFera} alt="Logo" fill/>
-                      </div>
-                    </Link>
-                  </AspectRatio.Root>
-                </div>
+              ? <Link href="/" className={styles.nav_logo}>
+                  <Image src={logoCapFera} alt="logo" fill/>
+                </Link>
               : null
           }
           <Navbar />

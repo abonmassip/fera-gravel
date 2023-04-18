@@ -1,28 +1,26 @@
-import { getContent } from '@lib/files'
-
+import { getFile } from '@lib/files'
+import { BackgroundImage } from '@/src/components/ContentImages/ContentImages';
+import MarkdownText from '@/src/components/MarkdownText/MarkdownText';
+import IMAGES from '@/src/lib/images';
 import styles from '@styles/infoPage.module.scss'
 
 export default function Marxandatge ({ htmlContent }) {
-
   return(
     <div className={styles.main}>
-      <div className={styles.text} dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
+      <BackgroundImage src={IMAGES.graphics.fulles} />
+      <MarkdownText htmlContent={htmlContent}/>
     </div>
   )
 }
 
 export async function getStaticProps({ params }) {
-  const htmlContent = await getContent(params.lang, 'marxandatge');
-  return { props: {htmlContent} }
+  const page = await getFile(params.lang, 'marxandatge');
+  return { props: { htmlContent: page.content } }
 }
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      { params: { lang: 'ca' } },
-      { params: { lang: 'es' } },
-      { params: { lang: 'en' } }
-    ],
+    paths: [{ params: { lang: 'ca' } }, { params: { lang: 'es' } }, { params: { lang: 'en' } }],
     fallback: false
   }
 }

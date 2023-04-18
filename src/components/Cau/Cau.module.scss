@@ -1,16 +1,15 @@
 @import '../../styles/mixins';
 
 .cau {
-  background-color: var(--color-rose-light);
+  background-color: var(--color-green);
   padding: 10px;
   word-wrap: break-word;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  // height: 260px;
 }
 
 .cauImage {
-  position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
   transition: aspect-ratio 0.2s;
@@ -20,7 +19,8 @@
 
 .title {
   h1 {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-ss);
+    white-space: nowrap;
   }
 
   a:hover {
@@ -29,11 +29,13 @@
 }
 
 .location {
-  font-size: 0.9rem;
+  font-size: 0.6rem;
 
   img {
     display: inline-block;
     margin-right: 6px;
+    width: 10px;
+    height: 10px;
   }
 
   a:hover {
@@ -50,13 +52,16 @@
   pointer-events: none;
 
   p {
-    font-size: var(--font-size-ss);
+    font-size: 0.6rem;
+    margin-top: 10px;
   }
 }
 
 .moreInfo {
-  align-self: flex-end;
-  font-size: 0.8rem;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.6rem;
   background: none;
   border: none;
   color: inherit;
@@ -66,19 +71,41 @@
 }
 
 .show {
+  .cauImage {
+    aspect-ratio: 99999 / 1;
+  }
   .cauMarkdown {
     height: 100px;
-    flex-grow: 1;
     opacity: 1;
-
-    p {
-      margin-top: 10px;
-    }
   }
 }
 
 @include laptop {
-  .show .cauImage {
-    aspect-ratio: 3 / 1;
+  .cau {
+    // height: 300px;
+  }
+
+  .title {
+    h1 {
+      font-size: var(--font-size-m);
+    }
+  }
+
+  .location {
+    font-size: 0.9rem;
+    img {
+        width: 16px;
+        height: 16px;
+      }
+  }
+
+  .moreInfo {
+    font-size: 0.8rem;
+  }
+
+  .cauMarkdown {
+    p {
+      font-size: 0.7rem;
+    }
   }
 }

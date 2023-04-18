@@ -4,48 +4,37 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 
-const contentDirectory = path.resolve(process.cwd(), 'content')
+const contentDir = path.resolve(process.cwd(), 'content')
 
-export async function getContent(lang, page) {
-  const filePath = path.join(contentDirectory, lang, `${page}.md`)
-  const defaultLanguagePath = path.join(contentDirectory, 'ca', `${page}.md`)
-  let finalPath = defaultLanguagePath
-
-  try {
-    if (fs.statSync(filePath).isFile()) {
-      finalPath = filePath
-    }
-  } catch (err) {
-    console.error(`Falta l'arxiu traduït a "content/${lang}/${page}.md", s'utilitzarà la versió en català "content/ca/${page}.md"`)
-  }
-
-  const fileContents = fs.readFileSync(finalPath, 'utf-8')
-  const frontMatter = matter(fileContents)
-  const processedContent = await remark().use(html).process(frontMatter.content)
-  const contentHtml = processedContent.toString()
-  return contentHtml
+export async function processMarkdown(text) {
+  const processedContent = await remark().use(html).process(text)
+  return processedContent.toString()
 }
 
-
-async function getCauData(fileName, filesPath) {
-  const id = fileName.replace(/\.md$/, "")
-  const fullPath = path.join(filesPath, fileName)
-  const fileContents = fs.readFileSync(fullPath, 'utf-8')
+async function extractData(filePath, fileName) {
+  const fileContents = fs.readFileSync(path.join(filePath, fileName), 'utf-8')
   const frontMatter = matter(fileContents)
   const processedContent = await remark().use(html).process(frontMatter.content)
+
   return {
-    id,
+    id: fileName.replace(/\.md$/, ""),
     ...frontMatter.data,
     content: processedContent.toString()
   }
 }
 
-export async function getCaus(lang) {
-  const filesPath = path.join(contentDirectory, lang, 'caus')
+export async function getFile(lang, page) {
+  const filePath = path.join(contentDir, lang)
+  const fileName = page + '.md'
+  const content = await extractData(filePath, fileName)
+  return content
+}
 
-  const fileNames = fs.readdirSync(filesPath)
-
-  const causData = await Promise.all(fileNames.map(async (fileName) => getCauData(fileName, filesPath)))
-
-  return causData
+export async function getFolder(lang, folder) {
+  const folderPath = path.join(contentDir, lang, folder)
+  const fileNames = fs.readdirSync(folderPath)
+  const filesData = await Promise.all(
+    fileNames.map(async (fileName) => extractData(folderPath, fileName))
+  )
+  return filesData
 }

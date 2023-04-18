@@ -5,6 +5,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import useTranslation from '@lib/useTranslation'
 import { cx } from '@lib/utils'
 import { LanguageContext } from '@lib/LanguageProvider'
+import { RutaContext } from '@lib/context'
 import { MobileMenuContext } from '@lib/context'
 
 import styles from './Navbar.module.scss'
@@ -60,11 +61,12 @@ export function NavbarDropdownButton({ page }) {
   const router = useRouter()
   const { t } = useTranslation()
   const [locale, setLocale] = useContext(LanguageContext)
+  const [ruta, setRuta] = useContext(RutaContext)
 
   return (
     <li className={styles.menu_button}>
       <NavigationMenu.Link className={styles.link} active={router.asPath.split('/').pop() === page} asChild>
-        <Link href={`/${locale}/${page}`}>
+        <Link href={`/${locale}/${page}`} onClick={() => setRuta(null)}>
           {t(page).toUpperCase()}
         </Link>
       </NavigationMenu.Link>

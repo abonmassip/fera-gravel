@@ -1,36 +1,31 @@
-import { getContent, getCaus } from '@lib/files'
-import { cx } from '@lib/utils'
+import { getFile, getFolder } from '@lib/files'
+import { BackgroundImage } from '@/src/components/ContentImages/ContentImages'
 import MarkdownText from '@components/MarkdownText/MarkdownText'
 import Cau from '@components/Cau/Cau'
+import IMAGES from '@/src/lib/images'
 import styles from '@styles/caus.module.scss'
-import { montserratM } from '@lib/fonts'
 
-export default function Caus ({ htmlContent, causData }) {
-
+export default function Caus ({ htmlContent, caus }) {
   return(
-    <div className={cx(styles.main, montserratM.className)}>
-
+    <div className={styles.main}>
+      <BackgroundImage src={IMAGES.graphics.branca}/>
       <MarkdownText htmlContent={htmlContent} />
       <div className={styles.gridWrapper}>
-        {causData.map((cau) => <Cau {...cau} key={cau.id}/>)}
+        {caus.map((cau) => <Cau {...cau} key={cau.id}/>)}
       </div>
     </div>
   )
 }
 
 export async function getStaticProps({ params }) {
-  const htmlContent = await getContent(params.lang, 'caus')
-  const causData = await getCaus(params.lang)
-  return { props: {htmlContent, causData} }
+  const page = await getFile(params.lang, 'caus')
+  const caus = await getFolder(params.lang, 'caus')
+  return { props: { htmlContent: page.content, caus } }
 }
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      { params: { lang: 'ca' } },
-      { params: { lang: 'es' } },
-      { params: { lang: 'en' } }
-    ],
+    paths: [{ params: { lang: 'ca' } }, { params: { lang: 'es' } }, { params: { lang: 'en' } }],
     fallback: false
   }
 }
