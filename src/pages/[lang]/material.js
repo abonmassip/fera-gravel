@@ -2,14 +2,13 @@ import { getFile } from '@lib/files'
 import { BackgroundImage } from '@/src/components/ContentImages/ContentImages';
 import MarkdownText from '@components/MarkdownText/MarkdownText';
 import IMAGES from '@/src/lib/images';
-import styles from '@styles/infoPage.module.scss'
 
 export default function Material ({ htmlContent }) {
   return(
-    <div className={styles.main}>
+    <>
       <BackgroundImage src={IMAGES.graphics.branca}/>
-      <MarkdownText htmlContent={htmlContent}/>
-    </div>
+      <MarkdownText content={htmlContent}/>
+    </>
   )
 }
 

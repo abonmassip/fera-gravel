@@ -11,8 +11,8 @@ export default function Sostenibilitat ({ firstContent, secondContent }) {
   return(
     <>
       <BackgroundImage src={IMAGES.graphics.fulles} scale={1.2} opacity={0.15} />
-      <MarkdownText htmlContent={firstContent}/>
-      <ImageAndText src={IMAGES.images.ovelles} text={secondContent} />
+      <MarkdownText content={firstContent}/>
+      <ImageAndText src={IMAGES.images.ovelles} text={secondContent} ratio={[20, 80]} height={150} />
       <FullWidthImage src={IMAGES.images.carreteraBosc} height={300}/>
     </>
   )

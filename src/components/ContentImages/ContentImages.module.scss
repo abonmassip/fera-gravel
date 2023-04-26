@@ -37,40 +37,50 @@
   top: 0;
   left: 0;
   z-index: -1;
-  overflow: visible;
 
   img {
     object-fit: cover;
     margin: 0;
-    overflow: visible;
   }
 }
 
 .imageAndText {
+  // background-color: lightgreen;
   width: 100%;
   margin: 1rem 0;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  // flex-direction: column;
+  // gap: 10px;
 
   @include laptop {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    // display: grid;
+    // grid-template-columns: 1fr 2fr;
+    // display: flex;
+    // flex-direction: column;
   }
 
   .imageLeft {
     position: relative;
-    min-height: 100px;
-    width: 100%;
+    // min-height: 100px;
+    // width: 50%;
+    // height: 200px;
 
     img {
+      width: 200px;
+      height: 200px;
       object-fit: cover;
     }
   }
 
   .text {
-    align-self: center;
+    font-size: var(--font-size-sm);
+    // align-self: center;
+    // width: 50%;
+    position: relative;
+    // left: -20px;
+    // bottom: -20px;
+    // right: 20px;
     padding: 1rem;
-    background-color: var(--color-rose);
+    background-color: #fceef1;
   }
 }

@@ -2,14 +2,13 @@ import { getFile } from '@lib/files'
 import { BackgroundImage } from '@/src/components/ContentImages/ContentImages';
 import MarkdownText from '@/src/components/MarkdownText/MarkdownText';
 import IMAGES from '@/src/lib/images';
-import styles from '@styles/infoPage.module.scss'
 
 export default function Marxandatge ({ htmlContent }) {
   return(
-    <div className={styles.main}>
+    <>
       <BackgroundImage src={IMAGES.graphics.fulles} />
-      <MarkdownText htmlContent={htmlContent}/>
-    </div>
+      <MarkdownText content={htmlContent}/>
+    </>
   )
 }
 

@@ -1,0 +1,39 @@
+@import '../../styles/mixins';
+
+.gallery {
+  // background-color: rgba(255, 192, 203, 0.151);
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, var(--size-gallery-grid-small));
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.image {
+  width: var(--size-gallery-grid-small);
+  height: var(--size-gallery-grid-small);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@include laptop {
+  .gallery {
+    // grid-template-columns: repeat(auto-fill, var(--size-gallery-grid));
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // gap: 2px;
+  }
+
+  .image {
+    width: var(--size-gallery-grid);
+    height: var(--size-gallery-grid);
+  }
+}

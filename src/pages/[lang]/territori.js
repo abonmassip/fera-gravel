@@ -7,11 +7,11 @@ export default function Territori ({ firstContent, secondContent, thirdContent }
   return(
     <div>
       <BackgroundImage src={IMAGES.graphics.fulles} />
-      <MarkdownText htmlContent={firstContent} />
+      <MarkdownText content={firstContent} />
       <FullWidthImage src={IMAGES.images.foguera} height="300px" />
-      <MarkdownText htmlContent={secondContent} />
+      <MarkdownText content={secondContent} />
       <FullWidthImage src={IMAGES.images.antenes} height="300px" />
-      <MarkdownText htmlContent={thirdContent} />
+      <MarkdownText content={thirdContent} />
     </div>
   )
 }

@@ -33,7 +33,7 @@
   height: 4px;
   border-radius: 4px;
   background-color: var(--color-blue);
-  transition: all var(--animation-time) ease;
+  transition: all var(--time-animation-short) ease;
 
   &.top {
     transform: translate(0, -9px);

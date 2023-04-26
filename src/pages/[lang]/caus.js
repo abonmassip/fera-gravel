@@ -1,18 +1,15 @@
 import { getFile, getFolder } from '@lib/files'
 import { BackgroundImage } from '@/src/components/ContentImages/ContentImages'
 import MarkdownText from '@components/MarkdownText/MarkdownText'
-import Cau from '@components/Cau/Cau'
+import CausCollection from '@/src/components/CausCollection/CausCollection'
 import IMAGES from '@/src/lib/images'
-import styles from '@styles/caus.module.scss'
 
 export default function Caus ({ htmlContent, caus }) {
   return(
-    <div className={styles.main}>
+    <div>
       <BackgroundImage src={IMAGES.graphics.branca}/>
-      <MarkdownText htmlContent={htmlContent} />
-      <div className={styles.gridWrapper}>
-        {caus.map((cau) => <Cau {...cau} key={cau.id}/>)}
-      </div>
+      <MarkdownText content={htmlContent} />
+      <CausCollection caus={caus} />
     </div>
   )
 }

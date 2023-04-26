@@ -7,6 +7,10 @@ export const RutaContext = createContext([])
 export const MobileMenuProvider = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false)
 
+  useEffect(() => {
+    window.document.body.className = showMenu ? 'noScroll' : ''
+  }, [showMenu])
+
   return (
     <MobileMenuContext.Provider value={[showMenu, setShowMenu]}>
       {children}

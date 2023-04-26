@@ -1,10 +1,10 @@
 @import '../../styles/mixins';
 
 .markdown {
+  padding: 10px 0;
 
   h1 {
-    font-size: var(--font-size-l);
-    letter-spacing: 0.4rem;
+    letter-spacing: var(--letter-spacing-lg);
     margin: 0 30px;
   }
 
@@ -12,14 +12,11 @@
     margin: 0 30px 15px 30px;
     height: 3px;
     border: none;
-    background-color: var(--color-blue);
+    background-color: var(--color-text);
   }
 
   p {
-    font-size: var(--font-size-ss);
-    line-height: 1.5;
-    text-align: justify;
-    margin: 10px 0;
+    margin: 1rem 0;
   }
 
   ul {
@@ -34,33 +31,22 @@
   }
 
   a {
+    color: var(--color-blue);
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 500;
+
+    &:hover {
+      color: var(--color-red);
+    }
   }
 
   blockquote {
-    padding-left: 3rem;
+    padding-left: 2rem;
     margin: 2rem 0;
     font-style: italic;
 
     p {
-      font-size: 0.6rem;
-    }
-  }
-}
-
-@include desktop {
-  .markdown {
-    h1 {
-      font-size: var(--font-size-lll);
-    }
-
-    p {
-      font-size: var(--font-size-s);
-    }
-
-    blockquote > p {
-      font-size: 0.8rem;
+      font-size: var(--font-size-xs);
     }
   }
 }

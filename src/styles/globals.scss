@@ -1,35 +1,75 @@
 @import '../styles/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
 
 :root {
   --color-blue: #3e5680;
-  --color-aqua: #408eb5;
   --color-red: #c37171;
-  --color-rose: #f6cdd556;
   --color-green: #f0f6f4;
   --color-background: #ffffff;
   --color-text: #222222;
 
-  --font-size-ss: 0.8rem;
-  --font-size-s: 1rem;
-  --font-size-m: 1.2rem;
-  --font-size-l: 1.4rem;
-  --font-size-ll: 1.8rem;
-  --font-size-lll: 2.5rem;
+  // --font-size-ss: 0.8rem;
+  // --font-size-s: 1rem;
+  // --font-size-m: 1.2rem;
+  // --font-size-l: 1.4rem;
+  // --font-size-ll: 1.8rem;
+  // --font-size-lll: 2.5rem;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 3rem;
+
+  --line-height-sm: 1.25;
+  --line-height-md: 1.5;
+
+  --letter-spacing-sm: 0.05em;
+  --letter-spacing-md: 0.1em;
+  --letter-spacing-lg: 0.2em;
+
+  --size-gallery-grid: 100px;
+  --size-gallery-grid-small: 80px;
+
+  --time-animation-short: 0.1s;
+  --time-animation-long: 0.2s;
 
   --header-height: 50px;
 
   @include laptop {
+    // --font-size-sm: 0.875rem;
+    // --font-size-md: 1rem;
+    // --font-size-lg: 1.125rem;
+    // --font-size-xl: 1.5rem;
+    // --font-size-2xl: 2rem;
+    // --font-size-3xl: 2.5rem;
+    // --font-size-4xl: 3.5rem;
+
     --header-height: 80px;
   }
-
-  --animation-time: 0.2s;
 }
 
 body, html {
   background-color: var(--color-background);
-  color: var(--color-blue);
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(11px + 0.390625vw);
+  line-height: normal;
+
   max-width: 1200px;
   margin: auto;
+}
+
+body.noScroll {
+  position: fixed;
+  width: 100vw;
+
+  @include laptop {
+    position: inherit;
+    width: inherit;
+  }
 }

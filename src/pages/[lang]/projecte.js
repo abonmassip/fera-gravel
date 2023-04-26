@@ -7,8 +7,8 @@ export default function Projecte ({ htmlContent }) {
   return(
     <>
       <BackgroundImage src={IMAGES.graphics.branca} />
-      <MarkdownText htmlContent={htmlContent} />
-      <CenteredImage src={IMAGES.logos.logoBlack} width="200px" height="200px" />
+      <MarkdownText content={htmlContent} />
+      <CenteredImage src={IMAGES.logo.black} width="200px" height="200px" />
     </>
   )
 }

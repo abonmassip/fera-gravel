@@ -9,14 +9,13 @@ import { RutaContext } from '@lib/context'
 import { MobileMenuContext } from '@lib/context'
 
 import styles from './Navbar.module.scss'
-import { montserratXB } from '@lib/fonts'
 
 export function NavbarMenu({ children }) {
   const [showMenu, setShowMenu] = useContext(MobileMenuContext)
 
   return (
     <NavigationMenu.Root className={cx(styles.root, showMenu ? styles.show : '')}>
-      <NavigationMenu.List className={cx(styles.list, montserratXB.className)}>
+      <NavigationMenu.List className={styles.list}>
         {children}
       </NavigationMenu.List>
     </NavigationMenu.Root>

@@ -7,7 +7,7 @@ export default function Acces ({ htmlContent }) {
   return(
     <div>
       <BackgroundImage src={IMAGES.graphics.branca} />
-      <MarkdownText htmlContent={htmlContent}/>
+      <MarkdownText content={htmlContent}/>
       <FullWidthImage src={IMAGES.images.finestra} height="300px"/>
     </div>
   )

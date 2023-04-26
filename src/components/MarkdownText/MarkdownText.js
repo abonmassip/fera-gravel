@@ -1,13 +1,7 @@
-import { cx } from '@lib/utils'
 import styles from './MarkdownText.module.scss'
-import { montserratM } from '@lib/fonts'
 
-export default function MarkdownText ({ htmlContent }) {
-
+export default function MarkdownText ({ content }) {
   return (
-    <div
-      className={cx(styles.markdown, montserratM.className)}
-      dangerouslySetInnerHTML={{ __html: htmlContent }}
-    ></div>
+    <div className={styles.markdown} dangerouslySetInnerHTML={{ __html: content }} />
   )
 }

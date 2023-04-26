@@ -1,13 +1,15 @@
 @import '../../../styles/mixins';
 
 .languages {
-  display: none;
-  position: absolute;
-  justify-content: center;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
   width: 100%;
-  z-index: 3;
-  font-size: var(--font-size-m);
-  padding: 4px;
+  bottom: 0;
+  z-index: 1;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  margin-bottom: 60px;
 
   a {
     margin: 0 4px;
@@ -15,14 +17,12 @@
   }
 }
 
-.show {
-  display: flex;
-}
-
 @include laptop {
   .languages {
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: flex-end;
-    font-size: var(--font-size-ss);
+    font-size: var(--font-size-sm);
   }
 }

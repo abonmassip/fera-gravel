@@ -19,7 +19,7 @@
 
 .title {
   h1 {
-    font-size: var(--font-size-ss);
+    font-size: var(--font-size-md);
     white-space: nowrap;
   }
 
@@ -29,7 +29,7 @@
 }
 
 .location {
-  font-size: 0.6rem;
+  font-size: var(--font-size-xs);
 
   img {
     display: inline-block;
@@ -38,8 +38,11 @@
     height: 10px;
   }
 
-  a:hover {
-    color: var(--color-red);
+  a {
+    font-weight: 500;
+    &:hover {
+      color: var(--color-red);
+    }
   }
 }
 
@@ -52,7 +55,7 @@
   pointer-events: none;
 
   p {
-    font-size: 0.6rem;
+    font-size: var(--font-size-xs);
     margin-top: 10px;
   }
 }
@@ -61,7 +64,7 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: 0.6rem;
+  font-size: var(--font-size-xs);
   background: none;
   border: none;
   color: inherit;
@@ -81,31 +84,10 @@
 }
 
 @include laptop {
-  .cau {
-    // height: 300px;
-  }
-
-  .title {
-    h1 {
-      font-size: var(--font-size-m);
-    }
-  }
-
   .location {
-    font-size: 0.9rem;
     img {
         width: 16px;
         height: 16px;
       }
-  }
-
-  .moreInfo {
-    font-size: 0.8rem;
-  }
-
-  .cauMarkdown {
-    p {
-      font-size: 0.7rem;
-    }
   }
 }

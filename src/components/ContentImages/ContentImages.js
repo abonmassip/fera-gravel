@@ -42,15 +42,16 @@ export function BackgroundImage ({
   )
 }
 
-export function ImageAndText ({ src, text, height = 'inherit' }) {
+export function ImageAndText ({ src, text, height = 'inherit', ratio = [50, 50] }) {
   return (
     <div>
-      <div className={styles.imageAndText} style={{height: height}}>
-        <div className={styles.imageLeft}>
-          <Image src={src} alt="" fill/>
+      <div className={styles.imageAndText}>
+        <div className={styles.imageLeft} style={{height: height, width: `${ratio[0]}%`}}>
+          <Image src={src} alt="" width={600} height={600}/>
         </div>
-        <div className={styles.text}>
-          <MarkdownText htmlContent={text} />
+        <div className={styles.text} style={{width: `${ratio[1]}%`}}>
+          <MarkdownText content={text} />
+          {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima laudantium quam molestias repudiandae veniam quae nisi, culpa quaerat iure dolorem quasi provident sit, voluptatibus eum nihil dolorum sequi explicabo?</p> */}
         </div>
       </div>
     </div>

@@ -8,16 +8,16 @@
   list-style: none;
   padding: 0;
   color: var(--color-blue);
-  font-size: var(--font-size-ss);
-  white-space: nowrap;
+  // font-size: var(--font-size-ss);
+  // white-space: nowrap;
 
   @include laptop {
     flex-direction: row;
-    font-size: var(--font-size-ss);
+    // font-size: var(--font-size-ss);
   }
 
   @include desktop {
-    font-size: var(--font-size-s);
+    // font-size: var(--font-size-s);
   }
 }
 
@@ -26,8 +26,6 @@
 
   &:hover {
     color: var(--color-red);
-    transform: scale(1.08);
-    transition: transform var(--animation-time) ease-in-out;
   }
 }
 
@@ -35,19 +33,27 @@
   color: var(--color-red);
 }
 
+.name {
+  line-height: 1;
+  // background-color: pink;
+}
+
 .horizontal {
   flex-direction: row;
-  justify-content: space-around;
-  font-size: 0.42rem;
+  justify-content: space-evenly;
+  // font-size: 0.42rem;
 
   .rutaLink {
-    margin: 0 4px;
+    line-height: 1.2;
+    margin: 0 2px;
+    text-align: center;
+    // font-size: 0.7rem;
+  }
+  .subtitol {
+    // font-size: 0.5rem;
   }
 
   @include laptop {
-    font-size: var(--font-size-ss);
-  }
-  @include desktop {
-    font-size: var(--font-size-s);
+    // font-size: var(--font-size-ss);
   }
 }

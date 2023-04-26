@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { cx, useOutsideAlerter } from '@lib/utils'
 import IMAGES from '@/src/lib/images'
 import styles from './Cau.module.scss'
-import { montserratM } from '@lib/fonts'
 
 const MakeLink = ({ url, children }) => url ? <a href={url} target='_blank'>{ children }</a> : children
 
@@ -13,7 +12,7 @@ export default function Caus ({ nom, localitat, link, imatge, maps, content }) {
   useOutsideAlerter(wrapperRef, () => setShow(false))
 
   return (
-    <div ref={wrapperRef} className={cx(styles.cau, montserratM.className, show ? styles.show : '')}>
+    <div ref={wrapperRef} className={cx(styles.cau, show ? styles.show : '')}>
 
       <div className={styles.title}>
         <MakeLink url={link}>
@@ -24,7 +23,7 @@ export default function Caus ({ nom, localitat, link, imatge, maps, content }) {
 
       <div className={styles.location}>
         <MakeLink url={maps}>
-          <Image src={IMAGES.icons.location} alt="location" width={16} />
+          <Image src={IMAGES.icon.location} alt="location" width={16} />
           {localitat}
         </MakeLink>
       </div>

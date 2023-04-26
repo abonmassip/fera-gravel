@@ -4,11 +4,12 @@ import {
   NavbarDropdown,
   NavbarDropdownButton
 } from './NavbarPieces'
+import LanguageMenu from '../LanguageMenu/LanguageMenu'
 
 export default function Navbar() {
   return (
     <NavbarMenu>
-
+      <LanguageMenu />
       <NavbarDropdown title="projecte">
         <NavbarDropdownButton page="projecte" />
         <NavbarDropdownButton page="sostenibilitat" />
@@ -22,18 +23,10 @@ export default function Navbar() {
       <NavbarDropdown title="ruta">
         <NavbarDropdownButton page="ruta" />
         <NavbarDropdownButton page="territori" />
-        {/* <NavbarDropdownButton page="fera500" />
-        <NavbarDropdownButton page="fera300" />
-        <NavbarDropdownButton page="fera200" />
-        <NavbarDropdownButton page="fera150" /> */}
       </NavbarDropdown>
 
       <NavbarButton page="ruta" onlyMobile />
       <NavbarButton page="territori" onlyMobile />
-      {/* <NavbarButton page="fera500" onlyMobile />
-      <NavbarButton page="fera300" onlyMobile />
-      <NavbarButton page="fera200" onlyMobile />
-      <NavbarButton page="fera150" onlyMobile /> */}
 
       <NavbarButton page="material" />
 

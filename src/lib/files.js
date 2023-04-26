@@ -4,11 +4,26 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 
-const contentDir = path.resolve(process.cwd(), 'content')
+import imageSize from 'image-size'
 
-export async function processMarkdown(text) {
-  const processedContent = await remark().use(html).process(text)
-  return processedContent.toString()
+const contentDir = path.resolve(process.cwd(), 'content')
+const imagesDir = path.resolve(process.cwd(), 'public/img')
+
+export async function getImages(folder) {
+  const folderPath = path.join(imagesDir, folder)
+  const fileNames = fs.readdirSync(folderPath)
+  const imagesData = await Promise.all(
+    fileNames.map(async (fileName) => {
+      const dimensions = imageSize(path.join(folderPath, fileName))
+      return {
+        largeURL: `/img/${folder}/${fileName}`,
+        thumbnailURL: `/img/${folder}/${fileName}`,
+        width: dimensions.width,
+        height: dimensions.height
+      }
+    })
+  )
+  return imagesData
 }
 
 async function extractData(filePath, fileName) {
