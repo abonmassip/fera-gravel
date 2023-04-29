@@ -2,10 +2,10 @@ import Image from 'next/image'
 import MarkdownText from '../MarkdownText/MarkdownText'
 import styles from './ContentImages.module.scss'
 
-export function FullWidthImage ({ src, height = '100px' }) {
+export function FullWidthImage ({ src, resolution = 1000, height = '100px' }) {
   return (
     <div className={styles.fullWidthImage} style={{ height: height }}>
-      <Image src={src} alt="" fill />
+      <Image src={src} alt="" width={resolution} height={resolution} />
     </div>
   )
 }
@@ -25,17 +25,15 @@ export function BackgroundImage ({
   scale = 1,
   rotate = 0,
   position = 'center',
-  opacity = 0.1,
-  blur = 0
+  opacity = 0.1
 }) {
   return (
     <div className={styles.backgroundImage}>
-      <Image src={src} alt="" fill
+      <Image src={src} alt="" fill quality={100}
         style={{
           objectPosition: position,
           opacity: opacity,
           transform: `scale(${scale}) rotate(${rotate}deg)`,
-          filter: `blur(${blur}px)`
         }}
       />
     </div>
@@ -51,7 +49,6 @@ export function ImageAndText ({ src, text, height = 'inherit', ratio = [50, 50] 
         </div>
         <div className={styles.text} style={{width: `${ratio[1]}%`}}>
           <MarkdownText content={text} />
-          {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima laudantium quam molestias repudiandae veniam quae nisi, culpa quaerat iure dolorem quasi provident sit, voluptatibus eum nihil dolorum sequi explicabo?</p> */}
         </div>
       </div>
     </div>

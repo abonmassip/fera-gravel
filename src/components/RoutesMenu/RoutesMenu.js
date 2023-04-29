@@ -1,31 +1,38 @@
-import { useContext } from 'react'
-import Link from 'next/link'
-import { LanguageContext } from '@lib/LanguageProvider'
-import { RutaContext } from '@lib/context'
+import useRutaState from '@/src/hooks/useRutaState'
 import { cx } from '@lib/utils'
 import styles from './RoutesMenu.module.scss'
 
-const FeraLink = ({ fera, dist }) => {
-  const [locale, setLocale] = useContext(LanguageContext)
-  const [ruta, setRuta] = useContext(RutaContext)
+const FeraLink = ({ fera, children }) => {
+  const { ruta, setRuta } = useRutaState()
+  const classActive = ruta === fera ? styles.active : ''
   return (
-    <Link href={`/${locale}/ruta`} onClick={() => setRuta(fera)}>
-      <li className={cx(styles.rutaLink, ruta === fera ? styles.active : '')}>
-        <div className={styles.name}>
-          <h2>FERA {fera}</h2>
-        </div>
-      </li>
-    </Link>
+    <li onClick={() => setRuta(fera)}>
+      <div className={cx(styles.rutaButton, classActive)}>
+        {children}
+      </div>
+    </li>
   )
 }
 
-export default function RoutesMenu({ horizontal }) {
+export default function RoutesMenu() {
   return(
-    <ul className={cx(styles.menu_rutes, horizontal ? styles.horizontal : '')}>
-      <FeraLink fera="500" dist="500km // 13.500mD+" />
-      <FeraLink fera="300" dist="300km // 8.000mD+" />
-      <FeraLink fera="200" dist="200km // 5.500mD+" />
-      <FeraLink fera="150" dist="150km // 3.000mD+" />
+    <ul className={styles.menu_rutes}>
+      <FeraLink fera="500">
+        <h1>FERA 500</h1>
+        <strong>500km // 13.500mD+</strong>
+      </FeraLink>
+      <FeraLink fera="300">
+        <h1>FERA 300</h1>
+        <strong>300km // 8.000mD+</strong>
+      </FeraLink>
+      <FeraLink fera="200">
+        <h1>FERA 200</h1>
+        <strong>200km // 5.500mD+</strong>
+      </FeraLink>
+      <FeraLink fera="150">
+        <h1>FERA 150</h1>
+        <strong>150km // 3.000mD+</strong>
+      </FeraLink>
     </ul>
   )
 }

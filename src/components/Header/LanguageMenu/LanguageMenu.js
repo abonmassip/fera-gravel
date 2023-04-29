@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { LanguageContext } from '@lib/LanguageProvider'
+import { LanguageContext } from '@/src/contexts/LanguageContext'
 import styles from './LanguageMenu.module.scss'
 
 export default function LanguageMenu() {

@@ -17,6 +17,6 @@ Posteriorment, podeu fer servir el cròtal com a clauer.
 
 Hi ha diverses formes d’obtenir el Passaport.
 
-- Amb tots els productes d’Agència. OUTDOOR ADVENTOUR. <https://ca.outdooradventour.com/tours/fera-pyrenees-mountain-gravel>
+- Amb tots els productes d’Agència. [OUTDOOR ADVENTOUR](https://ca.outdooradventour.com/tours/fera-pyrenees-mountain-gravel)
 
 - Comprant-lo de forma individual a la web de NÒMADA-Pirineu Republik. <https://www.nomadapirineu.com/> _S’HA D’ACTUALITZAR ENLLAÇ_

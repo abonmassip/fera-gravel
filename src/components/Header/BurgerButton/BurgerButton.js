@@ -1,11 +1,10 @@
-import { useContext } from 'react'
-import { MobileMenuContext } from '@lib/context'
+import useMobileMenuState from '@/src/hooks/useMobileMenuState'
 import { cx } from '@lib/utils'
 
 import styles from './BurgerButton.module.scss'
 
 export default function BurgerButton () {
-  const [showMenu, setShowMenu] = useContext(MobileMenuContext)
+  const { showMenu, setShowMenu } = useMobileMenuState()
 
   return (
     <button

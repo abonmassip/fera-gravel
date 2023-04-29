@@ -5,27 +5,29 @@ import {
   NavbarDropdownButton
 } from './NavbarPieces'
 import LanguageMenu from '../LanguageMenu/LanguageMenu'
+import ContactMenu from '../ContactMenu/ContactMenu'
 
 export default function Navbar() {
   return (
     <NavbarMenu>
       <LanguageMenu />
+
       <NavbarDropdown title="projecte">
-        <NavbarDropdownButton page="projecte" />
+        <NavbarDropdownButton page="lafera" />
         <NavbarDropdownButton page="sostenibilitat" />
         <NavbarDropdownButton page="acces" />
       </NavbarDropdown>
 
-      <NavbarButton page="projecte" onlyMobile />
+      <NavbarButton page="lafera" onlyMobile />
       <NavbarButton page="sostenibilitat" onlyMobile />
       <NavbarButton page="acces" onlyMobile />
 
       <NavbarDropdown title="ruta">
-        <NavbarDropdownButton page="ruta" />
+        <NavbarDropdownButton page="rutes" />
         <NavbarDropdownButton page="territori" />
       </NavbarDropdown>
 
-      <NavbarButton page="ruta" onlyMobile />
+      <NavbarButton page="rutes" onlyMobile />
       <NavbarButton page="territori" onlyMobile />
 
       <NavbarButton page="material" />
@@ -40,6 +42,8 @@ export default function Navbar() {
 
       <NavbarButton page="marxandatge" />
       <NavbarButton page="agencia" />
+
+      <ContactMenu />
 
     </NavbarMenu>
   )

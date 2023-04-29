@@ -1,5 +1,5 @@
 import { getFile } from '@lib/files'
-import { BackgroundImage } from '@/src/components/ContentImages/ContentImages';
+import { BackgroundImage, FullWidthImage } from '@/src/components/ContentImages/ContentImages';
 import MarkdownText from '@/src/components/MarkdownText/MarkdownText';
 import IMAGES from '@/src/lib/images';
 
@@ -8,6 +8,7 @@ export default function Passaport ({ htmlContent }) {
     <>
       <BackgroundImage src={IMAGES.graphics.aguila} opacity={0.04}/>
       <MarkdownText content={htmlContent}/>
+      <FullWidthImage src={IMAGES.images.passaport_de_la_fera} height={300}/>
     </>
   )
 }

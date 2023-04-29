@@ -4,11 +4,11 @@ import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
 import styles from './ImageGallery.module.scss'
 
-export default function ImageGallery (props) {
+export default function ImageGallery ({ galleryID, images, resolution = 400}) {
 
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
-      gallery: '#' + props.galleryID,
+      gallery: '#' + galleryID,
       children: 'a',
       pswpModule: () => import('photoswipe'),
     });
@@ -18,22 +18,22 @@ export default function ImageGallery (props) {
       lightbox.destroy();
       lightbox = null;
     };
-  }, [props.galleryID]);
+  }, [galleryID]);
 
   return (
-    <div className="pswp-gallery" id={props.galleryID}>
+    <div className="pswp-gallery" id={galleryID}>
       <div className={styles.gallery}>
-        {props.images.map((image, index) => (
+        {images.map((image, index) => (
           <a
             href={image.largeURL}
             data-pswp-width={image.width}
             data-pswp-height={image.height}
-            key={props.galleryID + '-' + index}
+            key={galleryID + '-' + index}
             target="_blank"
             rel="noreferrer"
           >
             <div className={styles.image}>
-              <Image src={image.thumbnailURL} alt="" width={200} height={200}/>
+              <Image src={image.thumbnailURL} alt="" width={resolution} height={resolution}/>
             </div>
           </a>
         ))}

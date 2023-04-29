@@ -3,31 +3,31 @@
 .markdown {
   padding: 10px 0;
 
+  * {
+    margin: 0.5rem 0;
+  }
+
   h1 {
-    letter-spacing: var(--letter-spacing-lg);
-    margin: 0 30px;
+    font-weight: 800;
+    margin-bottom: 0;
   }
 
   hr {
-    margin: 0 30px 15px 30px;
+    margin-top: 0;
+    margin-bottom: 2rem;
     height: 3px;
     border: none;
     background-color: var(--color-text);
   }
 
-  p {
-    margin: 1rem 0;
-  }
-
   ul {
+    // list-style: none;
     list-style-type: disc;
-    margin-bottom: 1.5rem;
     padding-left: 1.5rem;
   }
 
   li {
-    margin-bottom: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   a {
@@ -46,7 +46,7 @@
     font-style: italic;
 
     p {
-      font-size: var(--font-size-xs);
+      font-size: var(--font-size-sm);
     }
   }
 }

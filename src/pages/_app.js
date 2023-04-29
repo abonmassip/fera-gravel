@@ -1,5 +1,6 @@
-import { LanguageProvider } from '@lib/LanguageProvider'
-import { MobileMenuProvider, RutaProvider } from '@lib/context'
+import { LanguageProvider } from '@/src/contexts/LanguageContext'
+import { RutaProvider } from '@/src/contexts/RutaContext'
+import { MobileMenuProvider } from '@/src/contexts/MobileMenuContext'
 import Layout from '@components/Layout/Layout'
 
 import '@styles/reset.css'

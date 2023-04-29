@@ -47,7 +47,7 @@
 
 .text {
   min-height: 30vh;
-  padding-right: 16px;
+  scrollbar-gutter: stable;
 
   &::-webkit-scrollbar {
     width: 4px;
@@ -59,8 +59,17 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var(--color-blue);
+    background: var(--color-text);
     border-radius: 10px;
+  }
+
+  details {
+    margin-bottom: 1rem;
+
+    strong {
+      user-select: none;
+      cursor: pointer;
+    }
   }
 }
 
@@ -69,5 +78,6 @@
     flex: 1 1 auto;
     height: 1px;
     overflow-y: auto;
+    padding-right: 16px;
   }
 }

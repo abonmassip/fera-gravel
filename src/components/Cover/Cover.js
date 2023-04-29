@@ -1,20 +1,19 @@
-import { useContext } from 'react'
 import Link from 'next/link'
-import { LanguageContext } from '@lib/LanguageProvider'
-import { RutaContext } from '@lib/context'
+import useTranslation from '@/src/hooks/useTranslation'
+import useRutaState from '@/src/hooks/useRutaState'
 
 import Image from 'next/image'
 import styles from './Cover.module.scss'
 import IMAGES from '@lib/images'
 
 function FeraLink ({ fera, dist }) {
-  const [locale, setLocale] = useContext(LanguageContext)
-  const [ruta, setRuta] = useContext(RutaContext)
+  const { locale } = useTranslation()
+  const { setRuta } = useRutaState()
   return (
-    <Link href={`/${locale}/ruta`} onClick={() => setRuta(fera)}>
+    <Link href={`/${locale}/rutes`} onClick={() => setRuta(fera)}>
       <li className={styles.rutaLink}>
         <h1>FERA {fera}</h1>
-        <strong className={styles.subtitol}>{dist}</strong>
+        <strong>{dist}</strong>
       </li>
     </Link>
   )

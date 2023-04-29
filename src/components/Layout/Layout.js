@@ -1,4 +1,5 @@
 import Header from '@components/Header/Header'
+import Footer from '@components/Footer/Footer'
 import styles from './Layout.module.scss'
 
 export default function Layout({ children }) {
@@ -6,9 +7,7 @@ export default function Layout({ children }) {
     <div className={styles.container}>
       <Header />
       <main className={styles.main}>{children}</main>
-      <footer className={styles.footer}>
-        <p>© 2023 Fera Gravel. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   )
 }

@@ -8,9 +8,9 @@ export default function Territori ({ firstContent, secondContent, thirdContent }
     <div>
       <BackgroundImage src={IMAGES.graphics.fulles} />
       <MarkdownText content={firstContent} />
-      <FullWidthImage src={IMAGES.images.foguera} height="300px" />
+      <FullWidthImage src={IMAGES.images.territori} height="300px" />
       <MarkdownText content={secondContent} />
-      <FullWidthImage src={IMAGES.images.antenes} height="300px" />
+      <FullWidthImage src={IMAGES.images.territori_2} height="300px" />
       <MarkdownText content={thirdContent} />
     </div>
   )

@@ -4,9 +4,11 @@ import { cx, useOutsideAlerter } from '@lib/utils'
 import IMAGES from '@/src/lib/images'
 import styles from './Cau.module.scss'
 
-const MakeLink = ({ url, children }) => url ? <a href={url} target='_blank'>{ children }</a> : children
+function MakeLink ({ url, children }) {
+  return url ? <a href={url} target='_blank'>{ children }</a> : children
+}
 
-export default function Caus ({ nom, localitat, link, imatge, maps, content }) {
+export default function Cau ({ nom, localitat, link, imatge, maps, content }) {
   const [show, setShow] = useState(false);
   const wrapperRef = useRef()
   useOutsideAlerter(wrapperRef, () => setShow(false))

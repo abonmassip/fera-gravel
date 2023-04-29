@@ -8,13 +8,7 @@
   --color-background: #ffffff;
   --color-text: #222222;
 
-  // --font-size-ss: 0.8rem;
-  // --font-size-s: 1rem;
-  // --font-size-m: 1.2rem;
-  // --font-size-l: 1.4rem;
-  // --font-size-ll: 1.8rem;
-  // --font-size-lll: 2.5rem;
-
+  --font-size-2xs: 0.65rem;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
@@ -40,14 +34,6 @@
   --header-height: 50px;
 
   @include laptop {
-    // --font-size-sm: 0.875rem;
-    // --font-size-md: 1rem;
-    // --font-size-lg: 1.125rem;
-    // --font-size-xl: 1.5rem;
-    // --font-size-2xl: 2rem;
-    // --font-size-3xl: 2.5rem;
-    // --font-size-4xl: 3.5rem;
-
     --header-height: 80px;
   }
 }

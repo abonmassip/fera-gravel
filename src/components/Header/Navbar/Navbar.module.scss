@@ -15,6 +15,7 @@
   overflow: hidden;
   font-size: var(--font-size-2xl);
   font-weight: 800;
+  overflow-y: scroll;
 
   > div {
     height: 100%;
@@ -81,6 +82,7 @@
   padding: 16px 20px;
   margin-top: 8px;
   background-color: var(--color-green);
+  box-shadow: 0 0 8px #00000020;
 }
 
 .menu_list {
