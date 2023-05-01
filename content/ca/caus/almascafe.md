@@ -1,5 +1,5 @@
 ---
-nom: "Alma’s Cafe"
+nom: "Alma’s Cafes"
 localitat: "Sort"
 link: ""
 maps: "https://goo.gl/maps/ocYqWEdjaCyYqozs5"
