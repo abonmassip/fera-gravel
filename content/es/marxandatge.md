@@ -2,10 +2,9 @@
 
 ---
 
-<https://www.nomadapirineu.com/>
+La Fera Pyrenees Mountain Gravel no tindria sentit sense el territori on es desenvolupa i la seva gent.
 
-Marca nacida e inspirada en los Pirineos.
+Volem donar visibilitat i treballar amb projectes amics, arrelats als Pirineus. Per això hem col·laborat amb alguns d'ells per crear productes relacionats amb el ciclisme i la Fera Pyrenees Mountain Gravel.
 
-Trabajan con diseños inspirados en la cultura y los deportes de montaña con el objetivo de crear comunidad, compartir territorio y dar visibilidad a los proyectos que se desarrollan en ellas.
-
-Colecciones de camisetas, sudaderas y complementos hechas con algodón orgánico y con todos los sellos de comercio justo.
+Us animem a visitar els seus llocs web i comprar si ho creieu necessari.
+Consumeix local, consumeix territori.

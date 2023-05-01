@@ -18,3 +18,9 @@ Des d’allà petites carreteres asfaltades i de terra ens portaran per la cara 
 La travessa es pot realitzar durant tot l’any. Tot i això, no recomanem fer-la si s’han produït nevades a cotes baixes durant l’hivern (la neu es pot acumular en algunes zones de la cara nord) i en cas d’onades de calor durant l’estiu (la cara sud pot assolir temperatures molt altes)
 
 El Refugi de Cuberes, ubicat a casa Miró, està obert de finals de març a finals de novembre. Cal reserva prèvia. Podeu demanar informació i reservar a través del telèfon (via whatsapp) 619 847 866 o de la seva web <https://www.refugicuberes.com>
+
+### Descarregues
+
+[track (gpx)](https://drive.google.com/file/d/1y46irivkI-sJkE2hIVwugcJ2RYXA-hOu/view?usp=share_link)
+
+[llibre de ruta (pdf)](https://drive.google.com/file/d/1njmjl5aAlHdCQzBSlHl0EbCKIXe3ix-B/view?usp=share_link)

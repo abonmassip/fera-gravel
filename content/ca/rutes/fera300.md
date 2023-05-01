@@ -15,3 +15,11 @@ La Fera 300 transcorre per espais protegits amb gran interès cultural i natural
 Un traçat que descansa sota la neu durant alguns mesos l’any i que recomanem fer d’inicis de juny a finals d’octubre.
 
 Podeu trobar més informació a l’apartat Ruta i descarregar tota la informació concreta del traçat dividit en segments al Llibre de Ruta Fera 300.
+
+### Descarregues
+
+[track (gpx)](https://drive.google.com/file/d/1ixWCW_JEFOvYkodPtFx4lCR6cPhUanPm/view?usp=share_link)
+
+[track alternativa (gpx)](https://drive.google.com/drive/folders/1_sqxk7qjGc4c9vNd7ctJUnkFSsQ071Fh?usp=share_link)
+
+[llibre de ruta (pdf)](https://drive.google.com/file/d/1CxhurNhYoS8y_q8vs8ZaZe4fh_PTf-BY/view?usp=share_link)

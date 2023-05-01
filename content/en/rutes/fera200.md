@@ -13,3 +13,11 @@ From the Noguera Pallaresa valley to the Segre valley passing through the summit
 A route that rests under the snow for a few months of the year and that we recommend doing from the beginning of June to the end of October.
 
 You can find more information in the Route section and download all the specific information about the route divided into segments in the Fera Route Book.
+
+### Downloads
+
+[track (gpx)](https://drive.google.com/file/d/1eEVS080uoH-kIPmC9ljJdZZ5tRb77aXN/view?usp=share_link)
+
+[track alternative (gpx)](https://drive.google.com/drive/folders/1vMKbGAkQzQqElATKjX5yplhPptj9uW3P?usp=share_link)
+
+[route book (pdf)](https://drive.google.com/file/d/1AEWDq4arGCpn-Tp43GaRqtIyQDYz39u9/view?usp=share_link)

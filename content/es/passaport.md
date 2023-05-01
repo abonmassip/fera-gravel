@@ -17,6 +17,6 @@ Posteriormente, podéis usar el crótalo cómo llavero.
 
 Hay varias formas de obtener el pasaporte.
 
-- Con todos los productos de Agencia. OUTDOOR ADVENTOUR. <https://ca.outdooradventour.com/tours/fera-pyrenees-mountain-gravel>
+- Con todos los productos de Agencia. [OUTDOOR ADVENTOUR](https://ca.outdooradventour.com/tours/fera-pyrenees-mountain-gravel)
 
-- Comprándolo de forma individual a la web de NÒMADA-Pirineu Republik. <https://www.nomadapirineu.com/> _S’HA D’ACTUALITZAR ENLLAÇ_
+- Comprándolo de forma individual a la web de [NÒMADA-Pirineu Republik](https://www.nomadapirineu.com/fera/).

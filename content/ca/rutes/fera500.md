@@ -14,8 +14,8 @@ Podeu trobar més informació a l’apartat Ruta i descarregar tota la informaci
 
 ### Descarregues
 
-[track (gpx)](http://www.duckduckgo.com)
+[track (gpx)](https://drive.google.com/file/d/1BThPdgEV2n-rrMg0YkyBD4r0Kx53t6us/view?usp=share_link)
 
-[track alternativa (gpx)](http://www.duckduckgo.com)
+[track alternativa (gpx)](https://drive.google.com/drive/folders/1RG96rilvsb1ZiTPv8kVYC3xbteY8xhUj?usp=share_link)
 
-[llibre de ruta (pdf)](http://www.duckduckgo.com)
+[llibre de ruta (pdf)](https://drive.google.com/file/d/1Tu3Bog6vGgzjQBh0TEwK62fo2RiN1DQ8/view?usp=share_link)

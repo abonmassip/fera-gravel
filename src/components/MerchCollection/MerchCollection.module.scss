@@ -1,0 +1,69 @@
+@import '../../styles/mixins';
+
+.merchCollection {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.merchCard {
+  display: flex;
+  flex-direction: column;
+  @include laptop {
+    flex-direction: row;
+    gap: 12px;
+  }
+  align-items: center;
+}
+
+.image {
+  width: calc(60px + 10vw);
+  height: calc(60px + 10vw);
+  aspect-ratio: 1 / 1;
+
+  .imageWrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 999px;
+    cursor: pointer;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: all var(--time-animation-long) ease-in-out;
+    }
+  }
+}
+
+.text {
+  padding: 1rem;
+
+  .web {
+    font-weight: 500;
+  }
+}
+
+.markdown {
+  font-size: var(--font-size-sm);
+}
+
+.link {
+  text-align: center;
+
+  @include laptop {
+    text-align: initial;
+  }
+}
+
+.link:hover {
+  img {
+    scale: 1.05;
+  }
+
+  .web {
+    color: var(--color-red);
+  }
+}

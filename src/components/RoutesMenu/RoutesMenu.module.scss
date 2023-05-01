@@ -1,42 +1,38 @@
 @import '../../styles/mixins';
 
 .menu_rutes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 100%;
   list-style: none;
   padding: 0;
-  text-align: center;
   margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   @include laptop {
     margin-top: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .rutaButton {
-  cursor: pointer;
+  flex: 1 0 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-color: pink;
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  margin: 0.5rem 0;
 
-  font-size: var(--font-size-2xs);
+  strong {
+    font-weight: 500;
+  }
 
   @include laptop {
     font-size: inherit;
-  }
-
-  &:hover {
-    color: var(--color-red);
+    margin: 0;
   }
 }
 
-.rutaButton strong {
-  font-weight: 500;
-}
-
-.active {
+.rutaButton:hover, .active {
   color: var(--color-red);
 }

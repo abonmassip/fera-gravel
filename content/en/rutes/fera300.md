@@ -13,3 +13,11 @@ Fera 300 runs through protected areas of great cultural and natural interest, as
 A route that rests under the snow for a few months of the year and that we recommend doing from the beginning of June to the end of October.
 
 You can find more information in the Route section and download all the specific information about the route divided into segments in the Fera Route Book.
+
+### Downloads
+
+[track (gpx)](https://drive.google.com/file/d/1ixWCW_JEFOvYkodPtFx4lCR6cPhUanPm/view?usp=share_link)
+
+[track alternative (gpx)](https://drive.google.com/drive/folders/1_sqxk7qjGc4c9vNd7ctJUnkFSsQ071Fh?usp=share_link)
+
+[route book (pdf)](https://drive.google.com/file/d/1_XVun7K5IAZjOW0We4CyWhffjY0aepSV/view?usp=share_link)

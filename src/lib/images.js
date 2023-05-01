@@ -1,6 +1,6 @@
 import main from '@public/img/logo/logo-svg-nobackground.svg'
 import black from '@public/img/logo/logo-negre.jpg'
-import head from '@public/img/logo/logo-cap-fera.svg'
+import head from '@public/img/logo/logo-cap-fera-black.svg'
 
 import fera150 from '@public/img/maps/fera150boumort.jpg'
 import fera200 from '@public/img/maps/fera200.jpg'

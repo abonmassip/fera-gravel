@@ -11,3 +11,11 @@ Designed to pedal all the landscapes, cultures and traditions of its mountains, 
 Although the Fera has a specific route, it has several alternatives that allow you to reduce the mileage and the difference in altitude. We recommend using them in case of adverse weather or extreme fatigue.
 
 You can find more information in the Route section and download all the specific information about the route divided into segments in the Fera Route Book.
+
+### Downloads
+
+[track (gpx)](https://drive.google.com/file/d/1BThPdgEV2n-rrMg0YkyBD4r0Kx53t6us/view?usp=share_link)
+
+[track alternative (gpx)](https://drive.google.com/drive/folders/1RG96rilvsb1ZiTPv8kVYC3xbteY8xhUj?usp=share_link)
+
+[route book (pdf)](https://drive.google.com/file/d/1sRcwTOByCA0NTLPxqccohbY7u-fXrGxB/view?usp=share_link)

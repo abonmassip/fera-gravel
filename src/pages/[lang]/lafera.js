@@ -8,7 +8,7 @@ export default function LaFera ({ htmlContent }) {
     <>
       <BackgroundImage src={IMAGES.graphics.branca} />
       <MarkdownText content={htmlContent} />
-      <CenteredImage src={IMAGES.logo.black} width="200px" height="200px" />
+      <CenteredImage src={IMAGES.logo.black} width={200} height={200} />
     </>
   )
 }

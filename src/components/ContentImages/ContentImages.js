@@ -2,9 +2,9 @@ import Image from 'next/image'
 import MarkdownText from '../MarkdownText/MarkdownText'
 import styles from './ContentImages.module.scss'
 
-export function FullWidthImage ({ src, resolution = 1000, height = '100px' }) {
+export function FullWidthImage ({ src, height = 100, resolution = 1000 }) {
   return (
-    <div className={styles.fullWidthImage} style={{ height: height }}>
+    <div className={styles.fullWidthImage} style={{ height: `${height}px` }}>
       <Image src={src} alt="" width={resolution} height={resolution} />
     </div>
   )
@@ -13,8 +13,8 @@ export function FullWidthImage ({ src, resolution = 1000, height = '100px' }) {
 export function CenteredImage ({ src, width, height }) {
   return (
     <div className={styles.centeredImageContainer}>
-      <div className={styles.centeredImage} style={{width: width, height: height}}>
-        <Image src={src} alt="" fill />
+      <div className={styles.centeredImage} style={{width: `${width}px`, height: `${height}px`}}>
+        <Image src={src} alt="" width={width} height={height} />
       </div>
     </div>
   )
@@ -25,11 +25,12 @@ export function BackgroundImage ({
   scale = 1,
   rotate = 0,
   position = 'center',
-  opacity = 0.1
+  opacity = 0.1,
+  quality = 50
 }) {
   return (
     <div className={styles.backgroundImage}>
-      <Image src={src} alt="" fill quality={100}
+      <Image src={src} alt="" quality={quality} width={1920 / 100 * quality} height={1080 / 100 * quality} priority
         style={{
           objectPosition: position,
           opacity: opacity,

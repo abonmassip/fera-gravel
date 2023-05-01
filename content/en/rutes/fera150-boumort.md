@@ -18,3 +18,9 @@ From there, small paved and dirt roads will take us along the south side of the 
 The route can be done throughout the year. However, we do not recommend doing it if there has been snowfall at low altitudes during the winter (snow can accumulate in some areas of the north face) and in case of heat waves during the summer (the south face can reach very high temperatures)
 
 The Refugi de Cuberes, located in Casa Miró, is open from the end of March to the end of November. Reservation in advance is required. You can request information and make reservations by phone (via whatsapp) +34 619 847 866 or on their website <https://www.refugicuberes.com>
+
+### Downloads
+
+[track (gpx)](https://drive.google.com/file/d/1y46irivkI-sJkE2hIVwugcJ2RYXA-hOu/view?usp=share_link)
+
+[route book (pdf)](https://drive.google.com/file/d/1PsNu-xJYEQlYO4kZ8lCUMdKanfBmbWjy/view?usp=share_link)

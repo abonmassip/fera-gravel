@@ -12,7 +12,7 @@
 
 .nav_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: soace-between;
   align-items: center;
   padding: 0 1rem;
   max-width: 1200px;
@@ -22,10 +22,9 @@
 
 .nav_logo {
   aspect-ratio: 1 / 1;
-  margin-right: 30px;
   margin-top: 2rem;
   position: relative;
-  min-height: 45px;
+  min-height: 50px;
 }
 
 .nav_logo:hover,
@@ -62,5 +61,6 @@
   .nav_logo {
     min-height: 60px;
     margin-top: 0;
+    margin-right: 2rem;
   }
 }

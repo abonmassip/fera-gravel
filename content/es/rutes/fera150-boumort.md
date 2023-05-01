@@ -18,3 +18,9 @@ Desde allí pequeñas carreteras asfaltadas y de tierra nos llevarán por la car
 La travesía se puede realizar durante todo el año. Sin embargo, no recomendamos hacerla si se han producido nevadas en cotas bajas durante el invierno (la nieve se puede acumular en algunas zonas de la cara norte) y en caso de oleadas de calor durante el verano (la cara sur puede alcanzar temperaturas muy altas)
 
 El Refugi de Cuberes, ubicado en casa Miró, está abierto de finales de marzo a finales de noviembre. Es necesaria reserva previa. Podéis pedir información y reservar a través del teléfono (via whatsapp) 619 847 866 o de su web <https://www.refugicuberes.com>
+
+### Descargas
+
+[track (gpx)](https://drive.google.com/file/d/1y46irivkI-sJkE2hIVwugcJ2RYXA-hOu/view?usp=share_link)
+
+[libro de ruta (pdf)](https://drive.google.com/file/d/1uSl6ONFDWsJDZ9a7az4kX3DThXqgQsdb/view?usp=share_link)

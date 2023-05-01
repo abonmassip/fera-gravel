@@ -1,10 +1,6 @@
 import { getFile } from '@lib/files'
 import MarkdownText from '@components/MarkdownText/MarkdownText'
-import {
-  BackgroundImage,
-  FullWidthImage,
-  ImageAndText
-} from '@/src/components/ContentImages/ContentImages'
+import { BackgroundImage, FullWidthImage } from '@/src/components/ContentImages/ContentImages'
 import IMAGES from '@lib/images'
 
 export default function Sostenibilitat ({ firstContent, secondContent }) {
@@ -12,7 +8,8 @@ export default function Sostenibilitat ({ firstContent, secondContent }) {
     <>
       <BackgroundImage src={IMAGES.graphics.fulles} scale={1.2} opacity={0.15} />
       <MarkdownText content={firstContent}/>
-      <ImageAndText src={IMAGES.images.sostenible} text={secondContent} ratio={[20, 80]} height={150} />
+      <FullWidthImage src={IMAGES.images.sostenible} height={200} />
+      <MarkdownText content={secondContent}/>
       <FullWidthImage src={IMAGES.images.sostenible_o_acces} height={300}/>
     </>
   )

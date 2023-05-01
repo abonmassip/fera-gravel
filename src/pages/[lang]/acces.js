@@ -8,7 +8,7 @@ export default function Acces ({ htmlContent }) {
     <div>
       <BackgroundImage src={IMAGES.graphics.branca} />
       <MarkdownText content={htmlContent}/>
-      <FullWidthImage src={IMAGES.images.acces} height="300px"/>
+      <FullWidthImage src={IMAGES.images.acces} height={300}/>
     </div>
   )
 }

@@ -13,3 +13,11 @@ Un paisaje mosaico con grandes pastos y bosques, entre pueblos diseminados de va
 Un trazado que descansa bajo la nieve durante algunos meses el año y que recomendamos hacer de inicios de junio a finales de octubre.
 
 Podéis encontrar más información en el apartado Ruta y descargar toda la información concreta del trazado dividido en segmentos en el Libro de Ruta Fera 200.
+
+### Descargas
+
+[track (gpx)](https://drive.google.com/file/d/1eEVS080uoH-kIPmC9ljJdZZ5tRb77aXN/view?usp=share_link)
+
+[track alternativa (gpx)](https://drive.google.com/drive/folders/1vMKbGAkQzQqElATKjX5yplhPptj9uW3P?usp=share_link)
+
+[libro de ruta (pdf)](https://drive.google.com/file/d/1YJi4NtG17kvCMVQwnv2Afv7S5wIaK_op/view?usp=share_link)

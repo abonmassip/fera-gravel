@@ -19,7 +19,6 @@ export default function Rutes ({ rutesPage, rutesData, galleries }) {
             <>
               <BackgroundImage src={IMAGES.graphics.fulles} scale={1.2} opacity={0.15} />
               <MarkdownText content={rutesPage.content}/>
-              <FullWidthImage src={IMAGES.images.pista} height="250px" />
             </>
           )
       }

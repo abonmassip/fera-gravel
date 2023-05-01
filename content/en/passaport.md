@@ -17,6 +17,6 @@ Afterwards, you can use the sheep tag as a key ring.
 
 There are several ways to obtain the Passport.
 
-- With all Agency products. OUTDOOR ADVENTURE. <https://ca.outdooradventour.com/tours/fera-pyrenees-mountain-gravel>
+- With all Agency products. [OUTDOOR ADVENTOUR](https://ca.outdooradventour.com/tours/fera-pyrenees-mountain-gravel)
 
-- Buying it individually at the NOMADA-Pirineu Republik website. <https://www.nomadapirineu.com/> _LINK MUST BE UPDATED_
+- Buying it individually at the [NÒMADA-Pirineu Republik](https://www.nomadapirineu.com/fera/) website.

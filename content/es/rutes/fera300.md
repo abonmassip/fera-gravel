@@ -15,3 +15,11 @@ Fera 300 transcurre por espacios protegidos con gran interés cultural y natural
 Un trazado que descansa bajo la nieve durante algunos meses el año y que recomendamos hacer de inicios de junio a finales de octubre.
 
 Podéis encontrar más información en el apartado Ruta y descargar toda la información concreta del trazado dividida en segmentos en el Libro de Ruta Fera 300.
+
+### Descargas
+
+[track (gpx)](https://drive.google.com/file/d/1ixWCW_JEFOvYkodPtFx4lCR6cPhUanPm/view?usp=share_link)
+
+[track alternativa (gpx)](https://drive.google.com/drive/folders/1_sqxk7qjGc4c9vNd7ctJUnkFSsQ071Fh?usp=share_link)
+
+[libro de ruta (pdf)](https://drive.google.com/file/d/1biIYxhogX5hOT6jON0h4UEKjeaOwPs9H/view?usp=share_link)

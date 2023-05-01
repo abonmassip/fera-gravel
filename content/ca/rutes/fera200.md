@@ -13,3 +13,11 @@ Un paisatge mosaic amb grans pastures i boscos, entre pobles disseminats de vall
 Un traçat que descansa sota la neu durant alguns mesos l’any i que recomanem fer d’inicis de juny a finals d’octubre.
 
 Podeu trobar més informació a l’apartat Ruta i descarregar tota la informació concreta del traçat dividit en segments al Llibre de Ruta Fera 200.
+
+### Descarregues
+
+[track (gpx)](https://drive.google.com/file/d/1eEVS080uoH-kIPmC9ljJdZZ5tRb77aXN/view?usp=share_link)
+
+[track alternativa (gpx)](https://drive.google.com/drive/folders/1vMKbGAkQzQqElATKjX5yplhPptj9uW3P?usp=share_link)
+
+[llibre de ruta (pdf)](https://drive.google.com/file/d/1XVOYTGDJBSwmM0MIfsHpjN6TGx6HmqoK/view?usp=share_link)
