@@ -4,9 +4,9 @@
 
 Fera Pyrenees Mountain Gravel está pensada para ser realizada en bicicleta gravel.
 
-Bicicleta gravel para escapar de la especialización, cómo bicicleta de viaje y aventura, que permite avanzar en todo tipo de terrenos.
+Bicicleta gravel para escapar de la especialización, como bicicleta de viaje y aventura, que permite avanzar en todo tipo de terrenos.
 
-De todos modos y cómo es evidente, se puede pedalear con cualquier clase de bicicleta que se crea conveniente.
+De todos modos y como es evidente, se puede pedalear con cualquier clase de bicicleta que se crea conveniente.
 
 Para crear la ruta hemos utilizado una bicicleta gravel de acero con cubiertas mixtas, y una relación plato 50/34 y cassette de 11/36. Siempre transportando poco peso.
 

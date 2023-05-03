@@ -1,7 +1,7 @@
 # Fera Pyrenees Mountain Gravel web
 
 - [Desenvolupar](#desenvolupar)
-- [Estructura d'arxius](#estructura-darxius)
+- [Estructura d'arxius](#estructura-darxius-per-modificar)
 - [Github: guia per modificar arxius](#github-guia-per-modificar-arxius)
 - [Markdown: guia per formatar el text](#markdown-guia-per-formatar-el-text)
 - [Editar pàgines](#editar-pàgines)
@@ -17,7 +17,7 @@ Projecte desenvolupat amb [Next.js](https://nextjs.org/) i arrancat amb [`create
 
 [Aprendre Next.js](https://nextjs.org/learn)
 
-## Estructura d'arxius
+## Estructura d'arxius per modificar
 
 ```bash
 - 📁 content # TEXTOS
@@ -40,12 +40,12 @@ Projecte desenvolupat amb [Next.js](https://nextjs.org/) i arrancat amb [`create
 
 ### Text
 
-- entra a la carpeta `content`, localitza i obra l'arxiu
+- entra a la carpeta `content`, localitza i obre l'arxiu
 - clica el llapis <kbd>✏️</kbd> (a dalt a la dreta) per editar
 - després de modificar el text, clica el botó verd <kbd>Commit changes...</kbd> i al pop-up clica <kbd>Commit changes</kbd>
 - i ja està! 👏 espera uns minuts i la web estarà actualitzada
 
-per crear un arxiu nou, clica a <kbd>Add file</kbd>, <kbd>+ Create new file</kbd>, posa-li nom primer (recorda afegir la extensió `.md`), i un cop editat clica <kbd>Commit changes</kbd>
+per crear un arxiu nou, clica a <kbd>Add file</kbd>, <kbd>+ Create new file</kbd>, posa-li nom primer (recorda afegir l'extensió `.md`), i un cop editat clica <kbd>Commit changes</kbd>
 
 ### Imatges
 

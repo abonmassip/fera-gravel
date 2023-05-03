@@ -6,10 +6,10 @@ Pedalear sin dejar huella.
 
 Uno de los objetivos del proyecto es conservar el territorio donde se desarrolla, donde vivimos. Es por esto que Fera Pyrenees Mountain Gravel se construye sobre varios ejes: bicicleta, transporte público, economía local, reducción de impactos y compensación del CO₂ generado.
 
-Bicicleta cómo medio de transporte que permite disfrutar del entorno lejos de prisas,
-ruidos y humos. Impulso del cicloturismo cómo modelo de turismo, desestacionalitzado, de bajo impacto y lejos de masificaciones.
+Bicicleta como medio de transporte que permite disfrutar del entorno lejos de prisas,
+ruidos y humos. Impulso del cicloturismo como modelo de turismo, desestacionalitzado, de bajo impacto y lejos de masificaciones.
 
-Incentivar el transporte público cómo acceso prioritario a la ruta. El tren cómo vehículo para llegar a los Pirineos.
+Incentivar el transporte público como acceso prioritario a la ruta. El tren como vehículo para llegar a los Pirineos.
 Potenciar la economía local y sus productos. Un turismo conectado al territorio donde se desarrolla, respetuoso con habitantes y normativas.
 
 Reducción de materiales e impactos. Priorizamos los formatos digitales. Una ruta que no requiere servicios extra imprescindibles para realizarse.

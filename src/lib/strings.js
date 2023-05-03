@@ -24,7 +24,7 @@ export const LangStrings = {
     ruta: "Ruta",
     rutes: "Rutas",
     material: "Material",
-    passaport: "Passaporte",
+    passaport: "Pasaporte",
     passaporticaus: "Pasaporte y Madrigueras",
     caus: "Las Madrigueras de la Fera",
     marxandatge: "Merchandising",

@@ -1,4 +1,4 @@
-# PASSAPORTE
+# PASAPORTE
 
 ---
 
@@ -11,7 +11,7 @@ Es una manera de colaborar con la Fera Pyrenees Mountain Gravel y consumir local
 
 Presentar este pasaporte a cualquiera de los establecimientos colaboradores ofrece servicios y ofertas a su portador.
 Es un pasaporte individual y solo es puede utilizar una vez en cada establecimiento.
-Posteriormente, podéis usar el crótalo cómo llavero.
+Posteriormente, podéis usar el crótalo como llavero.
 
 **¿Cómo conseguirlo?**
 
