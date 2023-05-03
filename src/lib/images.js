@@ -10,6 +10,7 @@ import fera500 from '@public/img/maps/fera500.jpg'
 import branca from '@public/img/graphics/branca.png'
 import fulles from '@public/img/graphics/fulles.png'
 import aguila from '@public/img/graphics/aguila.png'
+import fera from '@public/img/graphics/fera.png'
 
 import location from '@public/img/icons/location.png'
 import instagram from '@public/img/icons/instagram.png'
@@ -31,7 +32,7 @@ import territori_2 from '@public/img/TERRITORI_(2).jpg'
 const IMAGES = {
   logo: { main, black, head },
   icon: { location, instagram, email, phone },
-  graphics: { branca, fulles, aguila },
+  graphics: { branca, fulles, aguila, fera },
   maps: { fera150, fera200, fera300, fera500 },
   images: {
     portada,

@@ -8,6 +8,4 @@ Por este motivo proponemos facilitaros la ruta de la mano de Outdoor Adventure. 
 
 Proponemos diversos productos que incorporan alojamiento, merchandising y servicios.
 
-Podéis acceder a los productos y reservarlos a través de su sitio web.
-
-<https://www.outdooradventour.com/tours/fera-pyrenees-mountain-gravel>
+Podéis acceder a los productos y reservarlos a través de su sitio web: [Outdoor Adventour](https://www.outdooradventour.com/tours/fera-pyrenees-mountain-gravel)

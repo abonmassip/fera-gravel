@@ -19,4 +19,4 @@ Hi ha diverses formes d’obtenir el Passaport.
 
 - Amb tots els productes d’Agència. [OUTDOOR ADVENTOUR](https://ca.outdooradventour.com/tours/fera-pyrenees-mountain-gravel)
 
-- Comprant-lo de forma individual a la web de [NÒMADA-Pirineu Republik](https://www.nomadapirineu.com/fera/).
+- Comprant-lo de forma individual a la web de [NÒMADA-Pirineu Republik](https://www.nomadapirineu.com/fera/). **\*\*PROPERAMENT\*\***

@@ -1,24 +1,32 @@
+import Head from 'next/head'
 import { getFile } from '@lib/files'
+import useTranslation from '@/src/hooks/useTranslation'
 import MarkdownText from '@components/MarkdownText/MarkdownText'
 import { BackgroundImage, FullWidthImage } from '@/src/components/ContentImages/ContentImages'
 import IMAGES from '@lib/images'
 
-export default function Sostenibilitat ({ firstContent, secondContent }) {
+export default function Sostenibilitat ({ sostenibilitatText, ingressosText }) {
+  const { t } = useTranslation()
+
   return(
     <>
-      <BackgroundImage src={IMAGES.graphics.fulles} scale={1.2} opacity={0.15} />
-      <MarkdownText content={firstContent}/>
+      <Head>
+        <title>Fera Gravel | {t('sostenibilitat')}</title>
+        <meta name="description" content="Fera Pyrenees Mountain Gravel sostenibilitat" />
+      </Head>
+      <BackgroundImage src={IMAGES.graphics.fulles} scale={1.2} />
+      <MarkdownText content={sostenibilitatText.content}/>
       <FullWidthImage src={IMAGES.images.sostenible} height={200} />
-      <MarkdownText content={secondContent}/>
+      <MarkdownText content={ingressosText.content}/>
       <FullWidthImage src={IMAGES.images.sostenible_o_acces} height={300}/>
     </>
   )
 }
 
 export async function getStaticProps({ params }) {
-  const first = await getFile(params.lang, 'sostenibilitat');
-  const second = await getFile(params.lang, 'sostenibilitat2');
-  return { props: { firstContent: first.content, secondContent: second.content } }
+  const sostenibilitatText = await getFile(params.lang, 'sostenibilitat');
+  const ingressosText = await getFile(params.lang, 'sostenibilitat-ingressos');
+  return { props: { sostenibilitatText, ingressosText } }
 }
 
 export async function getStaticPaths() {

@@ -5,7 +5,9 @@ import 'photoswipe/style.css';
 import { cx } from '@/src/lib/utils';
 import styles from './Modal.module.scss'
 
-export default function SingleImage ({ image, galleryID }) {
+export default function SingleImage ({ image, galleryID, width = '100%', height = '100%', res = 500, centered = false }) {
+
+  const classCentered = centered ? styles.centered : ''
 
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
@@ -22,7 +24,7 @@ export default function SingleImage ({ image, galleryID }) {
   }, [galleryID]);
 
   return (
-    <div className={cx(styles.container, 'pswp-gallery')} id={galleryID}>
+    <div className={cx(styles.container, 'pswp-gallery', classCentered)} id={galleryID} >
       <a
         href={image.src}
         data-pswp-width={image.width}
@@ -30,7 +32,7 @@ export default function SingleImage ({ image, galleryID }) {
         target="_blank"
         rel="noreferrer"
       >
-        <Image src={image.src} alt="" width={500} height={500} />
+        <Image src={image.src} alt="" width={res} height={res} />
       </a>
     </div>
   )

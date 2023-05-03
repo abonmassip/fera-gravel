@@ -2,9 +2,8 @@
 
 ---
 
-La Fera Pyrenees Mountain Gravel no tindria sentit sense el territori on es desenvolupa i la seva gent.
+The Fera Pyrenees Mountain Gravel would not make sense without the territory where it takes place and its people.
 
-Volem donar visibilitat i treballar amb projectes amics, arrelats als Pirineus. Per això hem col·laborat amb alguns d'ells per crear productes relacionats amb el ciclisme i la Fera Pyrenees Mountain Gravel.
+We want to give visibility and work with friendly projects, rooted in the Pyrenees. That's why we've collaborated with some of them to create products related to cycling and the Fera Pyrenees Mountain Gravel.
 
-Us animem a visitar els seus llocs web i comprar si ho creieu necessari.
-Consumeix local, consumeix territori.
+We encourage you to visit their websites and buy if you feel like it. Consume local, consume territory.

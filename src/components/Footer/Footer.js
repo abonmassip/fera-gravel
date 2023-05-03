@@ -9,7 +9,7 @@ export default function Footer() {
       <a href="https://www.instagram.com/feragravel/" target="_blank">
         <Image src={IMAGES.icon.instagram} alt="location" width={18} />
       </a>
-      <a href="mailto:feragravel@gmail.com">
+      <a href="mailto:fera@feragravel.com">
         <Image src={IMAGES.icon.email} alt="location" width={18} />
       </a>
       <a href="tel:+34973043409">

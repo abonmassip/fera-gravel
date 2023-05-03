@@ -1,18 +1,26 @@
+import Head from 'next/head'
+import useTranslation from '@/src/hooks/useTranslation'
 import { getFile } from '@lib/files'
 import { BackgroundImage, FullWidthImage } from '@/src/components/ContentImages/ContentImages'
 import MarkdownText from '@/src/components/MarkdownText/MarkdownText';
 import IMAGES from '@/src/lib/images';
 
 export default function Territori ({ firstContent, secondContent, thirdContent }) {
+  const { t } = useTranslation()
+
   return(
-    <div>
+    <>
+      <Head>
+        <title>Fera Gravel | {t('territori')}</title>
+        <meta name="description" content="Fera Pyrenees Mountain Gravel territori" />
+      </Head>
       <BackgroundImage src={IMAGES.graphics.fulles} />
       <MarkdownText content={firstContent} />
       <FullWidthImage src={IMAGES.images.territori} height="300px" />
       <MarkdownText content={secondContent} />
       <FullWidthImage src={IMAGES.images.territori_2} height="300px" />
       <MarkdownText content={thirdContent} />
-    </div>
+    </>
   )
 }
 

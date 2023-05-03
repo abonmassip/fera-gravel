@@ -1,4 +1,0 @@
----
-localitat: "Sort"
-imatgesAgencia: [{}]
----

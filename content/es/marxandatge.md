@@ -2,9 +2,8 @@
 
 ---
 
-La Fera Pyrenees Mountain Gravel no tindria sentit sense el territori on es desenvolupa i la seva gent.
+La Fera Pyrenees Mountain Gravel no tendría sentido sin el territorio donde se desarrolla y sus gentes.
 
-Volem donar visibilitat i treballar amb projectes amics, arrelats als Pirineus. Per això hem col·laborat amb alguns d'ells per crear productes relacionats amb el ciclisme i la Fera Pyrenees Mountain Gravel.
+Queremos dar visibilidad y trabajar con proyectos amigos, arraigados en los Pirineos. Por eso hemos colaborado con algunos de ellos para crear productos relacionados con el ciclismo y la Fera Pyrenees Mountain Gravel.
 
-Us animem a visitar els seus llocs web i comprar si ho creieu necessari.
-Consumeix local, consumeix territori.
+Os animamos a visitar sus sitios web y comprar si os apetece. Consume local, consume territorio.

@@ -1,38 +1,133 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fera Pyrenees Mountain Gravel web
 
-## Getting Started
+- [Desenvolupar](#desenvolupar)
+- [Estructura d'arxius](#estructura-darxius)
+- [Github: guia per modificar arxius](#github-guia-per-modificar-arxius)
+- [Markdown: guia per formatar el text](#markdown-guia-per-formatar-el-text)
+- [Editar pàgines](#editar-pàgines)
+- [Editar rutes](#editar-rutes)
+- [Editar caus de la fera](#editar-caus-de-la-fera)
+- [Editar marxandatge](#editar-marxandatge)
 
-First, run the development server:
+## Desenvolupar
+
+Projecte desenvolupat amb [Next.js](https://nextjs.org/) i arrancat amb [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+[Documentació de Next.js](https://nextjs.org/docs)
+
+[Aprendre Next.js](https://nextjs.org/learn)
+
+## Estructura d'arxius
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- 📁 content # TEXTOS
+  - 📁 ca
+    - 📁 caus
+    - 📁 marxandatge
+    - 📁 rutes
+    - 📄
+  - 📁 en
+  - 📁 es
+
+- 📁 public
+  - 📁 img # IMATGES
+    - 📁 galeria-caus
+    - 📁 galeria-fera500
+    - 📁 ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Github: guia per modificar arxius
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Text
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- entra a la carpeta `content`, localitza i obra l'arxiu
+- clica el llapis <kbd>✏️</kbd> (a dalt a la dreta) per editar
+- després de modificar el text, clica el botó verd <kbd>Commit changes...</kbd> i al pop-up clica <kbd>Commit changes</kbd>
+- i ja està! 👏 espera uns minuts i la web estarà actualitzada
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+per crear un arxiu nou, clica a <kbd>Add file</kbd>, <kbd>+ Create new file</kbd>, posa-li nom primer (recorda afegir la extensió `.md`), i un cop editat clica <kbd>Commit changes</kbd>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Imatges
 
-## Learn More
+- entra a la carpeta `public`, després a `img`, i finalment a la carpeta que vols modificar. només cal modificar les carpetes que comencen per `galeria-...`
+- **afegir imatge:** clica <kbd>Add file</kbd> i després <kbd>Upload files</kbd>. Arrossega una o vàries imatges i clica el botó verd <kbd>Commit changes</kbd>
+- **esborrar una imatge:** obre la imatge i clica <kbd>...</kbd> (a dalt a la dreta), després <kbd>Delete file</kbd>, finalment clica el botó verd <kbd>Commit changes</kbd>
+- i ja està! 👏 espera uns minuts i la web estarà actualitzada
 
-To learn more about Next.js, take a look at the following resources:
+## Markdown: guia per formatar el text
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Element                      | Syntax        |
+| ---------------------------- | ------------- |
+| titol                        | # text        |
+| subtitol                     | ## text       |
+| sub-subtitol                 | ### text      |
+| linia horitzontal sota titol | ---           |
+| negreta                      | \*\*text\*\*  |
+| cursiva                      | \*text\*      |
+| cita                         | > text        |
+| llista ordenada              | 1. text       |
+| llista no ordenada           | - text        |
+| enllaç dins un text          | \[text\](url) |
+| enllaç directament           | \<url\>       |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- sempre posar linies en blanc entre elements, paragrafs, titols, etc
+- per mostrar un caràcter en el text dels que afecten en el format de Markdown, posar-hi primer una barra cap a l'esquerra `\`. Per exemple, per posar un asterisc: ` \*LINK PROVISIONAL` i mostrarà \*LINK PROVISIONAL
 
-## Deploy on Vercel
+## Editar pàgines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- les pàgines tenen l'arxiu a l'arrel de la carpeta `content/idioma`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- algunes pàgines tenen més d'un arxiu
+
+## Editar rutes
+
+- les rutes estan a la carpeta `content/idioma/rutes`
+- per afegir variants de la ruta 150 cal afegir arxius que es diguin `fera150-` i el nom de la ruta, i acabarlos amb la extensió `.md`. Exemple: `fera150-boumort.md`
+- les variants de la ruta 150 han de tenir obligatòriament aquest format (mirar la `fera150-boumort.md` com a referència)
+
+```bash
+---
+nom: "Nom de la variant."
+---
+
+# text de la ruta...
+```
+
+## Editar caus de la fera
+
+- cada cau necessita un arxiu de text a `content/idioma/caus` i una imatge amb el mateix nom a `public/img/galeria-caus`
+- l'arxiu de text pot tenir el nom que sigui, però ha d'acabar amb l'extensió `.md`
+- la imatge ha de tenir el mateix nom i pot estar en qualsevol format d'imatge
+- Exemple:
+  - `content/ca/caus/labasseta.md`
+  - `public/img/galeria-caus/labasseta.jpg`
+- els arxius de text han de tenir obligatòriament aquest format:
+
+```bash
+---
+nom: "Nom del local"
+localitat: "Localitat del local"
+link: "https://www.linkdellocal.com"
+---
+
+# el text va aquí...
+```
+
+## Editar marxandatge
+
+- igual que els caus, cada botiga ha de tenir un text a `content/idioma/marxandatge` i una imatge amb el mateix nom a `public/img/galeria-marxandatge`
+- l'arxiu de text pot tenir el nom que sigui, però ha d'acabar amb l'extensió `.md`
+- la imatge ha de tenir el mateix nom i pot estar en qualsevol format d'imatge
+- Exemple:
+  - `content/ca/marxandatge/nomadaprineu.md`
+  - `public/img/galeria-marxandatge/nomadaprineu.jpg`
+- els arxius de text han de tenir obligatòriament aquest format:
+
+```bash
+---
+nom: "Nom de la botiga"
+link: "https://www.linkdelabotiga.com"
+---
+
+# el text va aquí...
+```

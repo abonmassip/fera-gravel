@@ -19,4 +19,4 @@ There are several ways to obtain the Passport.
 
 - With all Agency products. [OUTDOOR ADVENTOUR](https://ca.outdooradventour.com/tours/fera-pyrenees-mountain-gravel)
 
-- Buying it individually at the [NÒMADA-Pirineu Republik](https://www.nomadapirineu.com/fera/) website.
+- Buying it individually at the [NÒMADA-Pirineu Republik](https://www.nomadapirineu.com/fera/) website. **\*\*COMING SOON\*\***

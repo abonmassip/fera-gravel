@@ -11,13 +11,13 @@ export default function ContactMenu() {
           <Image src={IMAGES.icon.instagram} alt="location" width={24} />
         </div>
       </a>
-      <a href="mailto:feragravel@gmail.com">
+      <a href="mailto:fera@feragravel.com">
         <div className={styles.item}>
           <span>feragravel</span>
           <Image src={IMAGES.icon.email} alt="location" width={24} />
         </div>
       </a>
-      <a href="tel:+34666554433">
+      <a href="tel:+34973043409">
         <div className={styles.item}>
           <span>(+34) 973 043 409</span>
           <Image src={IMAGES.icon.phone} alt="location" width={24} />

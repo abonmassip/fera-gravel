@@ -8,5 +8,17 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    object-position: center;
+    margin: auto;
   }
+}
+
+.centered {
+  img {
+    width: 300px;
+  }
+}
+
+@include laptop {
+
 }

@@ -19,4 +19,4 @@ Hay varias formas de obtener el pasaporte.
 
 - Con todos los productos de Agencia. [OUTDOOR ADVENTOUR](https://ca.outdooradventour.com/tours/fera-pyrenees-mountain-gravel)
 
-- Comprándolo de forma individual a la web de [NÒMADA-Pirineu Republik](https://www.nomadapirineu.com/fera/).
+- Comprándolo de forma individual a la web de [NÒMADA-Pirineu Republik](https://www.nomadapirineu.com/fera/). **\*\*PRÓXIMAMENTE\*\***

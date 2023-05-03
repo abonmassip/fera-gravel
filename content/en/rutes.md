@@ -1,7 +1,3 @@
-# ROUTE
-
----
-
 One route, many options.
 
 Fera Pyrenees Mountain Gravel revolves around a circular route of 510 km and 13,300 m of positive elevation gain.

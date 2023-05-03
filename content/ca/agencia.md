@@ -8,6 +8,4 @@ Per aquest motiu proposem facilitar-vos la ruta de la mà d’Outdoor Adventour.
 
 Proposem diversos productes que incorporen allotjaments, merxandatge i serveis.
 
-Podeu accedir als productes i reservar-los a través del seu lloc web:
-
-<https://www.outdooradventour.com/tours/fera-pyrenees-mountain-gravel>
+Podeu accedir als productes i reservar-los a través del seu lloc web: [Outdoor Adventour](https://www.outdooradventour.com/tours/fera-pyrenees-mountain-gravel)

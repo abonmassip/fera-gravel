@@ -12,4 +12,4 @@ Una ruta que volem viva, en evolució i millora constant, que aposti per un mode
 
 Un projecte de ciclisme perquè tothom se’l faci seu, amb autosuficiència o utilitzant els allotjaments del territori, respectant normatives i població local.
 
-Una manera diferent de descobrir els Pirineus sense pressa i gaudint cada pedalada. Passar sense deixar empremta i on cada ciclista passi a formar part del paisatge
+Una manera diferent de descobrir els Pirineus sense pressa i gaudint cada pedalada. Passar sense deixar empremta i on cada ciclista passi a formar part del paisatge.

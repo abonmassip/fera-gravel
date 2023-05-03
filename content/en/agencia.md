@@ -8,6 +8,4 @@ For this reason we propose to facilitate the route with Outdoor Adventure. The a
 
 We propose various products that incorporate accommodation, merchandising and services.
 
-You can access the products and reserve through their website.
-
-<https://www.outdooradventour.com/tours/fera-pyrenees-mountain-gravel>
+You can access the products and reserve through their website: [Outdoor Adventour](https://www.outdooradventour.com/tours/fera-pyrenees-mountain-gravel)

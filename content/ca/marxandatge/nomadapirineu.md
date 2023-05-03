@@ -3,6 +3,8 @@ nom: "Nòmada Pirineu Republik"
 link: "https://www.nomadapirineu.com"
 ---
 
+**\*\*PROPERAMENT\*\***
+
 Marca nascuda i inspirada als Pirineus.
 
 Treballen amb dissenys inspirats en la cultura i els esports de muntanya amb l’objectiu de crear comunitat, compartir territori i donar visibilitat als projectes que s’hi desenvolupen.

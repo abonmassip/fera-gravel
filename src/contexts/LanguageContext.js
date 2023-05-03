@@ -17,7 +17,8 @@ export const LanguageProvider = ({ children }) => {
     }
 
     const language = localStorage.getItem('lang') || locale;
-    setLocale(language);
+    document.documentElement.setAttribute('lang', locale);
+    setLocale(locale);
   }, [locale])
 
   return (
