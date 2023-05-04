@@ -1,8 +1,7 @@
 import useRutaState from '@/src/hooks/useRutaState'
 import MarkdownText from '@components/MarkdownText/MarkdownText'
-import SingleImage from '@components/Modal/Modal'
 import IMAGES from '@/src/lib/images'
-import ImageGallery from '@/src/components/ImageGallery/ImageGallery';
+import ImageGallery, { SingleImage } from '@/src/components/ImageGallery/ImageGallery';
 import styles from './Fera.module.scss'
 
 function SubFera({ fera150, gallery }) {

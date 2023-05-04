@@ -11,23 +11,26 @@ export default function MerchCollection ({ merch, images }) {
     <div className={styles.merchCollection}>
       {
         merch.map((brand) => {
+          const { id, nom, link, content } = brand
+          const imageUrl = images[id] ? images[id].largeURL : images['default'].largeURL
+
           return (
-            <div key={brand.id} className={styles.merchCard}>
+            <div key={id} className={styles.merchCard}>
               <div className={styles.image}>
-                <MakeLink src={brand.link} className={styles.link}>
+                <MakeLink src={link} className={styles.link}>
                   <div className={styles.imageWrapper}>
-                    <Image src={images[brand.id].largeURL} alt="" width={300} height={300}/>
+                    <Image src={imageUrl} alt="" width={300} height={300}/>
                   </div>
                 </MakeLink>
               </div>
 
               <div className={styles.text}>
-                <MakeLink src={brand.link} className={styles.link}>
-                  <h1>{brand.nom}</h1>
-                  <p className={styles.web}>{brand.link}</p>
+                <MakeLink src={link} className={styles.link}>
+                  <h1>{nom}</h1>
+                  <p className={styles.web}>{link}</p>
                 </MakeLink>
                 <div className={styles.markdown}>
-                  <MarkdownText content={brand.content} />
+                  <MarkdownText content={content} />
                 </div>
               </div>
             </div>

@@ -27,7 +27,7 @@
     height: 100%;
     overflow: hidden;
     border-radius: 999px;
-    cursor: pointer;
+
 
     img {
       object-fit: cover;
@@ -52,6 +52,7 @@
 
 .link {
   text-align: center;
+  cursor: pointer;
 
   @include laptop {
     text-align: initial;

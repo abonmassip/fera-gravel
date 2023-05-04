@@ -7,26 +7,30 @@ function MakeLink ({ src, children, ...rest }) {
 }
 
 export default function CausCollection ({ caus, images }) {
+
   return (
     <div className={styles.causCollection}>
       {
         caus.map((cau) => {
-          return (
-            <div key={cau.id} className={styles.cauCard}>
+          const { id, nom = `⚠️falta nom!`, localitat = `⚠️falta localitat!`, link, content } = cau
+          const imageUrl = images[id] ? images[id].largeURL : images['default'].largeURL
 
-              <MakeLink src={cau.link} className={styles.link}>
+          return (
+            <div key={id} className={styles.cauCard}>
+
+              <MakeLink src={link} className={styles.link}>
                 <div className={styles.image} >
-                  <Image src={images[cau.id].largeURL} alt="" width={300} height={300}/>
+                  <Image src={imageUrl} alt="" width={300} height={300}/>
                 </div>
 
                 <div className={styles.local}>
-                  <h3>{cau.nom}</h3>
-                  <p className={styles.localitat}>{cau.localitat}</p>
+                  <h3>{nom}</h3>
+                  <p className={styles.localitat}>{localitat}</p>
                 </div>
               </MakeLink>
 
               <div className={styles.text}>
-                <MarkdownText content={cau.content}/>
+                <MarkdownText content={content}/>
               </div>
 
             </div>
